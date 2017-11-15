@@ -7,107 +7,160 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F7A2AE6B1FBCD729002B5B20 /* IFACoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A2AE611FBCD728002B5B20 /* IFACoreData.framework */; };
-		F7A2AE701FBCD729002B5B20 /* IFACoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A2AE6F1FBCD729002B5B20 /* IFACoreDataTests.m */; };
-		F7A2AE721FBCD729002B5B20 /* IFACoreData.h in Headers */ = {isa = PBXBuildFile; fileRef = F7A2AE641FBCD728002B5B20 /* IFACoreData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0981B6E8947E22C2253A323 /* Pods_IFACoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58A8DF1D875B0966D95A516 /* Pods_IFACoreData.framework */; };
+		F7A2AEC51FBCDF23002B5B20 /* IFACoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A2AEBB1FBCDF23002B5B20 /* IFACoreData.framework */; };
+		F7A2AECA1FBCDF23002B5B20 /* IFACoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A2AEC91FBCDF23002B5B20 /* IFACoreDataTests.swift */; };
+		F7A2AED91FBCDF83002B5B20 /* IFAPersistenceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F7A2AED61FBCDF83002B5B20 /* IFAPersistenceManager.h */; };
+		F7A2AEDA1FBCDF83002B5B20 /* IFACoreData.h in Headers */ = {isa = PBXBuildFile; fileRef = F7A2AED71FBCDF83002B5B20 /* IFACoreData.h */; };
+		F7A2AEDB1FBCDF83002B5B20 /* IFAPersistenceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A2AED81FBCDF83002B5B20 /* IFAPersistenceManager.m */; };
+		F8A3C9BD18BC3B4B2DD6A573 /* Pods_IFACoreData_IFACoreDataTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E10CBB641757B23CDC85B156 /* Pods_IFACoreData_IFACoreDataTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F7A2AE6C1FBCD729002B5B20 /* PBXContainerItemProxy */ = {
+		F7A2AEC61FBCDF23002B5B20 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F7A2AE581FBCD728002B5B20 /* Project object */;
+			containerPortal = F7A2AEB21FBCDF23002B5B20 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F7A2AE601FBCD728002B5B20;
+			remoteGlobalIDString = F7A2AEBA1FBCDF23002B5B20;
 			remoteInfo = IFACoreData;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F7A2AE611FBCD728002B5B20 /* IFACoreData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IFACoreData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7A2AE641FBCD728002B5B20 /* IFACoreData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IFACoreData.h; sourceTree = "<group>"; };
-		F7A2AE651FBCD728002B5B20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F7A2AE6A1FBCD729002B5B20 /* IFACoreDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IFACoreDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7A2AE6F1FBCD729002B5B20 /* IFACoreDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IFACoreDataTests.m; sourceTree = "<group>"; };
-		F7A2AE711FBCD729002B5B20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89859097A430E78AC28AE59D /* Pods-IFACoreData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IFACoreData.release.xcconfig"; path = "../Pods/Target Support Files/Pods-IFACoreData/Pods-IFACoreData.release.xcconfig"; sourceTree = "<group>"; };
+		8FC00CA0E533B6027FC605C9 /* Pods-IFACoreData-IFACoreDataTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IFACoreData-IFACoreDataTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-IFACoreData-IFACoreDataTests/Pods-IFACoreData-IFACoreDataTests.release.xcconfig"; sourceTree = "<group>"; };
+		CA7BAD993C502F191C5CF041 /* Pods-IFACoreData-IFACoreDataTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IFACoreData-IFACoreDataTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-IFACoreData-IFACoreDataTests/Pods-IFACoreData-IFACoreDataTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DE75240B524C60E268FE675A /* Pods-IFACoreData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IFACoreData.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-IFACoreData/Pods-IFACoreData.debug.xcconfig"; sourceTree = "<group>"; };
+		E10CBB641757B23CDC85B156 /* Pods_IFACoreData_IFACoreDataTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IFACoreData_IFACoreDataTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F58A8DF1D875B0966D95A516 /* Pods_IFACoreData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IFACoreData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7A2AEBB1FBCDF23002B5B20 /* IFACoreData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IFACoreData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7A2AEBF1FBCDF23002B5B20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7A2AEC41FBCDF23002B5B20 /* IFACoreDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IFACoreDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7A2AEC91FBCDF23002B5B20 /* IFACoreDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IFACoreDataTests.swift; sourceTree = "<group>"; };
+		F7A2AECB1FBCDF23002B5B20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7A2AED61FBCDF83002B5B20 /* IFAPersistenceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFAPersistenceManager.h; sourceTree = "<group>"; };
+		F7A2AED71FBCDF83002B5B20 /* IFACoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFACoreData.h; sourceTree = "<group>"; };
+		F7A2AED81FBCDF83002B5B20 /* IFAPersistenceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFAPersistenceManager.m; sourceTree = "<group>"; };
+		F7A2AEDC1FBCDF9D002B5B20 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; };
+		F7A2AEDD1FBCDF9D002B5B20 /* IFACoreData.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = IFACoreData.podspec; path = ../IFACoreData.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F7A2AE5D1FBCD728002B5B20 /* Frameworks */ = {
+		F7A2AEB71FBCDF23002B5B20 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0981B6E8947E22C2253A323 /* Pods_IFACoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F7A2AE671FBCD729002B5B20 /* Frameworks */ = {
+		F7A2AEC11FBCDF23002B5B20 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7A2AE6B1FBCD729002B5B20 /* IFACoreData.framework in Frameworks */,
+				F7A2AEC51FBCDF23002B5B20 /* IFACoreData.framework in Frameworks */,
+				F8A3C9BD18BC3B4B2DD6A573 /* Pods_IFACoreData_IFACoreDataTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F7A2AE571FBCD728002B5B20 = {
+		3E8CDA529B9B980C869419CE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F7A2AE631FBCD728002B5B20 /* IFACoreData */,
-				F7A2AE6E1FBCD729002B5B20 /* IFACoreDataTests */,
-				F7A2AE621FBCD728002B5B20 /* Products */,
+				DE75240B524C60E268FE675A /* Pods-IFACoreData.debug.xcconfig */,
+				89859097A430E78AC28AE59D /* Pods-IFACoreData.release.xcconfig */,
+				CA7BAD993C502F191C5CF041 /* Pods-IFACoreData-IFACoreDataTests.debug.xcconfig */,
+				8FC00CA0E533B6027FC605C9 /* Pods-IFACoreData-IFACoreDataTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EAD1FA7DE415B048ED8E6B2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F58A8DF1D875B0966D95A516 /* Pods_IFACoreData.framework */,
+				E10CBB641757B23CDC85B156 /* Pods_IFACoreData_IFACoreDataTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7A2AEB11FBCDF23002B5B20 = {
+			isa = PBXGroup;
+			children = (
+				F7A2AEDD1FBCDF9D002B5B20 /* IFACoreData.podspec */,
+				F7A2AEDC1FBCDF9D002B5B20 /* Podfile */,
+				F7A2AEBD1FBCDF23002B5B20 /* IFACoreData */,
+				F7A2AEC81FBCDF23002B5B20 /* IFACoreDataTests */,
+				F7A2AEBC1FBCDF23002B5B20 /* Products */,
+				3E8CDA529B9B980C869419CE /* Pods */,
+				EAD1FA7DE415B048ED8E6B2F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		F7A2AE621FBCD728002B5B20 /* Products */ = {
+		F7A2AEBC1FBCDF23002B5B20 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F7A2AE611FBCD728002B5B20 /* IFACoreData.framework */,
-				F7A2AE6A1FBCD729002B5B20 /* IFACoreDataTests.xctest */,
+				F7A2AEBB1FBCDF23002B5B20 /* IFACoreData.framework */,
+				F7A2AEC41FBCDF23002B5B20 /* IFACoreDataTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F7A2AE631FBCD728002B5B20 /* IFACoreData */ = {
+		F7A2AEBD1FBCDF23002B5B20 /* IFACoreData */ = {
 			isa = PBXGroup;
 			children = (
-				F7A2AE641FBCD728002B5B20 /* IFACoreData.h */,
-				F7A2AE651FBCD728002B5B20 /* Info.plist */,
+				F7A2AED51FBCDF83002B5B20 /* classes */,
+				F7A2AEBF1FBCDF23002B5B20 /* Info.plist */,
 			);
 			path = IFACoreData;
 			sourceTree = "<group>";
 		};
-		F7A2AE6E1FBCD729002B5B20 /* IFACoreDataTests */ = {
+		F7A2AEC81FBCDF23002B5B20 /* IFACoreDataTests */ = {
 			isa = PBXGroup;
 			children = (
-				F7A2AE6F1FBCD729002B5B20 /* IFACoreDataTests.m */,
-				F7A2AE711FBCD729002B5B20 /* Info.plist */,
+				F7A2AEC91FBCDF23002B5B20 /* IFACoreDataTests.swift */,
+				F7A2AECB1FBCDF23002B5B20 /* Info.plist */,
 			);
 			path = IFACoreDataTests;
+			sourceTree = "<group>";
+		};
+		F7A2AED51FBCDF83002B5B20 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				F7A2AED61FBCDF83002B5B20 /* IFAPersistenceManager.h */,
+				F7A2AED71FBCDF83002B5B20 /* IFACoreData.h */,
+				F7A2AED81FBCDF83002B5B20 /* IFAPersistenceManager.m */,
+			);
+			path = classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		F7A2AE5E1FBCD728002B5B20 /* Headers */ = {
+		F7A2AEB81FBCDF23002B5B20 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7A2AE721FBCD729002B5B20 /* IFACoreData.h in Headers */,
+				F7A2AEDA1FBCDF83002B5B20 /* IFACoreData.h in Headers */,
+				F7A2AED91FBCDF83002B5B20 /* IFAPersistenceManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		F7A2AE601FBCD728002B5B20 /* IFACoreData */ = {
+		F7A2AEBA1FBCDF23002B5B20 /* IFACoreData */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F7A2AE751FBCD729002B5B20 /* Build configuration list for PBXNativeTarget "IFACoreData" */;
+			buildConfigurationList = F7A2AECF1FBCDF23002B5B20 /* Build configuration list for PBXNativeTarget "IFACoreData" */;
 			buildPhases = (
-				F7A2AE5C1FBCD728002B5B20 /* Sources */,
-				F7A2AE5D1FBCD728002B5B20 /* Frameworks */,
-				F7A2AE5E1FBCD728002B5B20 /* Headers */,
-				F7A2AE5F1FBCD728002B5B20 /* Resources */,
+				9C4FFD18432D843DF561D636 /* [CP] Check Pods Manifest.lock */,
+				F7A2AEB61FBCDF23002B5B20 /* Sources */,
+				F7A2AEB71FBCDF23002B5B20 /* Frameworks */,
+				F7A2AEB81FBCDF23002B5B20 /* Headers */,
+				F7A2AEB91FBCDF23002B5B20 /* Resources */,
+				88D340E0D5EB0C0149E1F00F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -115,73 +168,77 @@
 			);
 			name = IFACoreData;
 			productName = IFACoreData;
-			productReference = F7A2AE611FBCD728002B5B20 /* IFACoreData.framework */;
+			productReference = F7A2AEBB1FBCDF23002B5B20 /* IFACoreData.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F7A2AE691FBCD729002B5B20 /* IFACoreDataTests */ = {
+		F7A2AEC31FBCDF23002B5B20 /* IFACoreDataTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F7A2AE781FBCD729002B5B20 /* Build configuration list for PBXNativeTarget "IFACoreDataTests" */;
+			buildConfigurationList = F7A2AED21FBCDF23002B5B20 /* Build configuration list for PBXNativeTarget "IFACoreDataTests" */;
 			buildPhases = (
-				F7A2AE661FBCD729002B5B20 /* Sources */,
-				F7A2AE671FBCD729002B5B20 /* Frameworks */,
-				F7A2AE681FBCD729002B5B20 /* Resources */,
+				4F690CB76CC7809CB9E110F1 /* [CP] Check Pods Manifest.lock */,
+				F7A2AEC01FBCDF23002B5B20 /* Sources */,
+				F7A2AEC11FBCDF23002B5B20 /* Frameworks */,
+				F7A2AEC21FBCDF23002B5B20 /* Resources */,
+				5F1D4C0578529F703FADA316 /* [CP] Embed Pods Frameworks */,
+				7414FB118FB4160C992AFA69 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F7A2AE6D1FBCD729002B5B20 /* PBXTargetDependency */,
+				F7A2AEC71FBCDF23002B5B20 /* PBXTargetDependency */,
 			);
 			name = IFACoreDataTests;
 			productName = IFACoreDataTests;
-			productReference = F7A2AE6A1FBCD729002B5B20 /* IFACoreDataTests.xctest */;
+			productReference = F7A2AEC41FBCDF23002B5B20 /* IFACoreDataTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F7A2AE581FBCD728002B5B20 /* Project object */ = {
+		F7A2AEB21FBCDF23002B5B20 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Marcelo Schroeder";
 				TargetAttributes = {
-					F7A2AE601FBCD728002B5B20 = {
+					F7A2AEBA1FBCDF23002B5B20 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
-					F7A2AE691FBCD729002B5B20 = {
+					F7A2AEC31FBCDF23002B5B20 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = F7A2AE5B1FBCD728002B5B20 /* Build configuration list for PBXProject "IFACoreData" */;
+			buildConfigurationList = F7A2AEB51FBCDF23002B5B20 /* Build configuration list for PBXProject "IFACoreData" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = F7A2AE571FBCD728002B5B20;
-			productRefGroup = F7A2AE621FBCD728002B5B20 /* Products */;
+			mainGroup = F7A2AEB11FBCDF23002B5B20;
+			productRefGroup = F7A2AEBC1FBCDF23002B5B20 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F7A2AE601FBCD728002B5B20 /* IFACoreData */,
-				F7A2AE691FBCD729002B5B20 /* IFACoreDataTests */,
+				F7A2AEBA1FBCDF23002B5B20 /* IFACoreData */,
+				F7A2AEC31FBCDF23002B5B20 /* IFACoreDataTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F7A2AE5F1FBCD728002B5B20 /* Resources */ = {
+		F7A2AEB91FBCDF23002B5B20 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F7A2AE681FBCD729002B5B20 /* Resources */ = {
+		F7A2AEC21FBCDF23002B5B20 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -190,34 +247,128 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXSourcesBuildPhase section */
-		F7A2AE5C1FBCD728002B5B20 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXShellScriptBuildPhase section */
+		4F690CB76CC7809CB9E110F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IFACoreData-IFACoreDataTests-checkManifestLockResult.txt",
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
-		F7A2AE661FBCD729002B5B20 /* Sources */ = {
+		5F1D4C0578529F703FADA316 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/../Pods/Target Support Files/Pods-IFACoreData-IFACoreDataTests/Pods-IFACoreData-IFACoreDataTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IFAFoundation/IFAFoundation.framework",
+				"${BUILT_PRODUCTS_DIR}/IFATestingSupport/IFATestingSupport.framework",
+				"${BUILT_PRODUCTS_DIR}/OCHamcrest/OCHamcrest.framework",
+				"${BUILT_PRODUCTS_DIR}/OCMock/OCMock.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IFAFoundation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IFATestingSupport.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OCHamcrest.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OCMock.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-IFACoreData-IFACoreDataTests/Pods-IFACoreData-IFACoreDataTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7414FB118FB4160C992AFA69 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-IFACoreData-IFACoreDataTests/Pods-IFACoreData-IFACoreDataTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88D340E0D5EB0C0149E1F00F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-IFACoreData/Pods-IFACoreData-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C4FFD18432D843DF561D636 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IFACoreData-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7A2AEB61FBCDF23002B5B20 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7A2AE701FBCD729002B5B20 /* IFACoreDataTests.m in Sources */,
+				F7A2AEDB1FBCDF83002B5B20 /* IFAPersistenceManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7A2AEC01FBCDF23002B5B20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7A2AECA1FBCDF23002B5B20 /* IFACoreDataTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F7A2AE6D1FBCD729002B5B20 /* PBXTargetDependency */ = {
+		F7A2AEC71FBCDF23002B5B20 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F7A2AE601FBCD728002B5B20 /* IFACoreData */;
-			targetProxy = F7A2AE6C1FBCD729002B5B20 /* PBXContainerItemProxy */;
+			target = F7A2AEBA1FBCDF23002B5B20 /* IFACoreData */;
+			targetProxy = F7A2AEC61FBCDF23002B5B20 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		F7A2AE731FBCD729002B5B20 /* Debug */ = {
+		F7A2AECD1FBCDF23002B5B20 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -266,16 +417,18 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		F7A2AE741FBCD729002B5B20 /* Release */ = {
+		F7A2AECE1FBCDF23002B5B20 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -318,17 +471,19 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		F7A2AE761FBCD729002B5B20 /* Debug */ = {
+		F7A2AED01FBCDF23002B5B20 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE75240B524C60E268FE675A /* Pods-IFACoreData.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -343,12 +498,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.infoaccent.IFACoreData;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		F7A2AE771FBCD729002B5B20 /* Release */ = {
+		F7A2AED11FBCDF23002B5B20 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89859097A430E78AC28AE59D /* Pods-IFACoreData.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -363,12 +520,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.infoaccent.IFACoreData;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		F7A2AE791FBCD729002B5B20 /* Debug */ = {
+		F7A2AED31FBCDF23002B5B20 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA7BAD993C502F191C5CF041 /* Pods-IFACoreData-IFACoreDataTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UE3CPRMBX7;
@@ -376,12 +535,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.infoaccent.IFACoreDataTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		F7A2AE7A1FBCD729002B5B20 /* Release */ = {
+		F7A2AED41FBCDF23002B5B20 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FC00CA0E533B6027FC605C9 /* Pods-IFACoreData-IFACoreDataTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UE3CPRMBX7;
@@ -389,6 +550,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.infoaccent.IFACoreDataTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -396,34 +558,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F7A2AE5B1FBCD728002B5B20 /* Build configuration list for PBXProject "IFACoreData" */ = {
+		F7A2AEB51FBCDF23002B5B20 /* Build configuration list for PBXProject "IFACoreData" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F7A2AE731FBCD729002B5B20 /* Debug */,
-				F7A2AE741FBCD729002B5B20 /* Release */,
+				F7A2AECD1FBCDF23002B5B20 /* Debug */,
+				F7A2AECE1FBCDF23002B5B20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F7A2AE751FBCD729002B5B20 /* Build configuration list for PBXNativeTarget "IFACoreData" */ = {
+		F7A2AECF1FBCDF23002B5B20 /* Build configuration list for PBXNativeTarget "IFACoreData" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F7A2AE761FBCD729002B5B20 /* Debug */,
-				F7A2AE771FBCD729002B5B20 /* Release */,
+				F7A2AED01FBCDF23002B5B20 /* Debug */,
+				F7A2AED11FBCDF23002B5B20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F7A2AE781FBCD729002B5B20 /* Build configuration list for PBXNativeTarget "IFACoreDataTests" */ = {
+		F7A2AED21FBCDF23002B5B20 /* Build configuration list for PBXNativeTarget "IFACoreDataTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F7A2AE791FBCD729002B5B20 /* Debug */,
-				F7A2AE7A1FBCD729002B5B20 /* Release */,
+				F7A2AED31FBCDF23002B5B20 /* Debug */,
+				F7A2AED41FBCDF23002B5B20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = F7A2AE581FBCD728002B5B20 /* Project object */;
+	rootObject = F7A2AEB21FBCDF23002B5B20 /* Project object */;
 }

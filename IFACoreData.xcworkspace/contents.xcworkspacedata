@@ -4,4 +4,7 @@
    <FileRef
       location = "group:IFACoreData/IFACoreData.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
 </Workspace>
