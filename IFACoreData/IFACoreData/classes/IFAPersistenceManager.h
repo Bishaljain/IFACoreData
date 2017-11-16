@@ -18,7 +18,8 @@
 //  limitations under the License.
 //
 
-#import <CoreData/CoreData.h>
+@import Foundation;
+@import CoreData;
 
 @class IFAEntityConfig;
 @class NSPersistentStore;
@@ -54,13 +55,13 @@
 
 - (void) resetEditSession;
 
-- (BOOL)validateValue:(id *)a_value forProperty:(NSString *)a_propertyName inManagedObject:a_managedObject alertPresenter:(UIViewController *)a_alertPresenter;
+//- (BOOL)validateValue:(id *)a_value forProperty:(NSString *)a_propertyName inManagedObject:a_managedObject alertPresenter:(UIViewController *)a_alertPresenter;
 - (BOOL)saveManagedObjectContext:(NSManagedObjectContext*)a_moc;
 - (BOOL)saveMainManagedObjectContext;
-- (BOOL)saveObject:(NSManagedObject *)aManagedObject validationAlertPresenter:(UIViewController *)a_validationAlertPresenter;
+//- (BOOL)saveObject:(NSManagedObject *)aManagedObject validationAlertPresenter:(UIViewController *)a_validationAlertPresenter;
 - (BOOL)save;
-- (BOOL)deleteObject:(NSManagedObject *)aManagedObject validationAlertPresenter:(UIViewController *)a_validationAlertPresenter;
-- (BOOL)deleteAndSaveObject:(NSManagedObject *)aManagedObject validationAlertPresenter:(UIViewController *)a_validationAlertPresenter;
+//- (BOOL)deleteObject:(NSManagedObject *)aManagedObject validationAlertPresenter:(UIViewController *)a_validationAlertPresenter;
+//- (BOOL)deleteAndSaveObject:(NSManagedObject *)aManagedObject validationAlertPresenter:(UIViewController *)a_validationAlertPresenter;
 - (void)rollback;
 //- (void)undo;
 
@@ -72,7 +73,7 @@
 - (NSUInteger)countEntity:(NSString *)entityName
             withPredicate:(NSPredicate *)predicate;
 
-- (BOOL)validateForSave:(NSManagedObject *)aManagedObject validationAlertPresenter:(UIViewController *)a_validationAlertPresenter;
+//- (BOOL)validateForSave:(NSManagedObject *)aManagedObject validationAlertPresenter:(UIViewController *)a_validationAlertPresenter;
 
 - (NSManagedObject *)instantiate:(NSString *)entityName;
 
@@ -90,11 +91,11 @@
                   includeSubentities:(BOOL)a_includeSubentities
                  usedForRelationship:(BOOL)a_usedForRelationship;
 
-- (void)deleteAllAndSaveForEntity:(NSString *)entityName
-         validationAlertPresenter:(UIViewController *)a_validationAlertPresenter;
+//- (void)deleteAllAndSaveForEntity:(NSString *)entityName
+//         validationAlertPresenter:(UIViewController *)a_validationAlertPresenter;
 
-- (void)deleteAllForEntity:(NSString *)a_entityName
-  validationAlertPresenter:(UIViewController *)a_validationAlertPresenter;
+//- (void)deleteAllForEntity:(NSString *)a_entityName
+//  validationAlertPresenter:(UIViewController *)a_validationAlertPresenter;
 
 - (NSManagedObject *) findSystemEntityById:(NSUInteger)anId entity:(NSString *)anEntityName;
 - (NSManagedObject *) findByName:(NSString*)aName entity:(NSString *)anEntityName;

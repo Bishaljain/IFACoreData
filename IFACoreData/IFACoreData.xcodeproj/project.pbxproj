@@ -8,11 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		E0981B6E8947E22C2253A323 /* Pods_IFACoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58A8DF1D875B0966D95A516 /* Pods_IFACoreData.framework */; };
+		F719E9FF1FBE247100A607D2 /* NSObject+IFACoreData.h in Headers */ = {isa = PBXBuildFile; fileRef = F7A2AEE71FBCE931002B5B20 /* NSObject+IFACoreData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F719EA001FBE247900A607D2 /* NSObject+IFACoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A2AEE61FBCE931002B5B20 /* NSObject+IFACoreData.m */; };
+		F719EA031FBE251B00A607D2 /* IFAEntityConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = F719EA011FBE251A00A607D2 /* IFAEntityConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F719EA041FBE251B00A607D2 /* IFAEntityConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F719EA021FBE251A00A607D2 /* IFAEntityConfig.m */; };
+		F719EA071FBE255600A607D2 /* IFACoreDataConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = F719EA051FBE255500A607D2 /* IFACoreDataConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F719EA081FBE255600A607D2 /* IFACoreDataConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = F719EA061FBE255500A607D2 /* IFACoreDataConstants.m */; };
+		F719EA0B1FBE2D0E00A607D2 /* IFACoreDataUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = F719EA091FBE2D0D00A607D2 /* IFACoreDataUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F719EA0C1FBE2D0E00A607D2 /* IFACoreDataUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F719EA0A1FBE2D0D00A607D2 /* IFACoreDataUtils.m */; };
+		F719EA0F1FBE2F3400A607D2 /* IFASystemEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = F719EA0D1FBE2F3400A607D2 /* IFASystemEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F719EA101FBE2F3400A607D2 /* IFASystemEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F719EA0E1FBE2F3400A607D2 /* IFASystemEntity.m */; };
+		F719EA131FBE324100A607D2 /* IFAEnumerationEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F719EA111FBE324000A607D2 /* IFAEnumerationEntity.m */; };
+		F719EA141FBE324100A607D2 /* IFAEnumerationEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = F719EA121FBE324100A607D2 /* IFAEnumerationEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F719EA171FBE34C800A607D2 /* IFAHelpManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F719EA151FBE34C700A607D2 /* IFAHelpManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F719EA181FBE34C800A607D2 /* IFAHelpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F719EA161FBE34C700A607D2 /* IFAHelpManager.m */; };
+		F719EA1B1FBE368F00A607D2 /* IFAPreferencesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F719EA191FBE368E00A607D2 /* IFAPreferencesManager.m */; };
+		F719EA1C1FBE368F00A607D2 /* IFAPreferencesManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F719EA1A1FBE368E00A607D2 /* IFAPreferencesManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7A2AEC51FBCDF23002B5B20 /* IFACoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A2AEBB1FBCDF23002B5B20 /* IFACoreData.framework */; };
 		F7A2AECA1FBCDF23002B5B20 /* IFACoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A2AEC91FBCDF23002B5B20 /* IFACoreDataTests.swift */; };
-		F7A2AED91FBCDF83002B5B20 /* IFAPersistenceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F7A2AED61FBCDF83002B5B20 /* IFAPersistenceManager.h */; };
-		F7A2AEDA1FBCDF83002B5B20 /* IFACoreData.h in Headers */ = {isa = PBXBuildFile; fileRef = F7A2AED71FBCDF83002B5B20 /* IFACoreData.h */; };
+		F7A2AED91FBCDF83002B5B20 /* IFAPersistenceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F7A2AED61FBCDF83002B5B20 /* IFAPersistenceManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7A2AEDA1FBCDF83002B5B20 /* IFACoreData.h in Headers */ = {isa = PBXBuildFile; fileRef = F7A2AED71FBCDF83002B5B20 /* IFACoreData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7A2AEDB1FBCDF83002B5B20 /* IFAPersistenceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A2AED81FBCDF83002B5B20 /* IFAPersistenceManager.m */; };
+		F7A2AEE21FBCE108002B5B20 /* NSManagedObject+IFACoreData.h in Headers */ = {isa = PBXBuildFile; fileRef = F7A2AEDE1FBCE107002B5B20 /* NSManagedObject+IFACoreData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7A2AEE31FBCE108002B5B20 /* NSManagedObjectContext+IFACoreData.h in Headers */ = {isa = PBXBuildFile; fileRef = F7A2AEDF1FBCE107002B5B20 /* NSManagedObjectContext+IFACoreData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7A2AEE41FBCE108002B5B20 /* NSManagedObjectContext+IFACoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A2AEE01FBCE107002B5B20 /* NSManagedObjectContext+IFACoreData.m */; };
+		F7A2AEE51FBCE108002B5B20 /* NSManagedObject+IFACoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A2AEE11FBCE108002B5B20 /* NSManagedObject+IFACoreData.m */; };
 		F8A3C9BD18BC3B4B2DD6A573 /* Pods_IFACoreData_IFACoreDataTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E10CBB641757B23CDC85B156 /* Pods_IFACoreData_IFACoreDataTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +53,20 @@
 		DE75240B524C60E268FE675A /* Pods-IFACoreData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IFACoreData.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-IFACoreData/Pods-IFACoreData.debug.xcconfig"; sourceTree = "<group>"; };
 		E10CBB641757B23CDC85B156 /* Pods_IFACoreData_IFACoreDataTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IFACoreData_IFACoreDataTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F58A8DF1D875B0966D95A516 /* Pods_IFACoreData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IFACoreData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F719EA011FBE251A00A607D2 /* IFAEntityConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFAEntityConfig.h; sourceTree = "<group>"; };
+		F719EA021FBE251A00A607D2 /* IFAEntityConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFAEntityConfig.m; sourceTree = "<group>"; };
+		F719EA051FBE255500A607D2 /* IFACoreDataConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFACoreDataConstants.h; sourceTree = "<group>"; };
+		F719EA061FBE255500A607D2 /* IFACoreDataConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFACoreDataConstants.m; sourceTree = "<group>"; };
+		F719EA091FBE2D0D00A607D2 /* IFACoreDataUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFACoreDataUtils.h; sourceTree = "<group>"; };
+		F719EA0A1FBE2D0D00A607D2 /* IFACoreDataUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFACoreDataUtils.m; sourceTree = "<group>"; };
+		F719EA0D1FBE2F3400A607D2 /* IFASystemEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFASystemEntity.h; sourceTree = "<group>"; };
+		F719EA0E1FBE2F3400A607D2 /* IFASystemEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFASystemEntity.m; sourceTree = "<group>"; };
+		F719EA111FBE324000A607D2 /* IFAEnumerationEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFAEnumerationEntity.m; sourceTree = "<group>"; };
+		F719EA121FBE324100A607D2 /* IFAEnumerationEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFAEnumerationEntity.h; sourceTree = "<group>"; };
+		F719EA151FBE34C700A607D2 /* IFAHelpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFAHelpManager.h; sourceTree = "<group>"; };
+		F719EA161FBE34C700A607D2 /* IFAHelpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFAHelpManager.m; sourceTree = "<group>"; };
+		F719EA191FBE368E00A607D2 /* IFAPreferencesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFAPreferencesManager.m; sourceTree = "<group>"; };
+		F719EA1A1FBE368E00A607D2 /* IFAPreferencesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFAPreferencesManager.h; sourceTree = "<group>"; };
 		F7A2AEBB1FBCDF23002B5B20 /* IFACoreData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IFACoreData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7A2AEBF1FBCDF23002B5B20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7A2AEC41FBCDF23002B5B20 /* IFACoreDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IFACoreDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,8 +75,14 @@
 		F7A2AED61FBCDF83002B5B20 /* IFAPersistenceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFAPersistenceManager.h; sourceTree = "<group>"; };
 		F7A2AED71FBCDF83002B5B20 /* IFACoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFACoreData.h; sourceTree = "<group>"; };
 		F7A2AED81FBCDF83002B5B20 /* IFAPersistenceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFAPersistenceManager.m; sourceTree = "<group>"; };
-		F7A2AEDC1FBCDF9D002B5B20 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; };
+		F7A2AEDC1FBCDF9D002B5B20 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F7A2AEDD1FBCDF9D002B5B20 /* IFACoreData.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = IFACoreData.podspec; path = ../IFACoreData.podspec; sourceTree = "<group>"; };
+		F7A2AEDE1FBCE107002B5B20 /* NSManagedObject+IFACoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+IFACoreData.h"; sourceTree = "<group>"; };
+		F7A2AEDF1FBCE107002B5B20 /* NSManagedObjectContext+IFACoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+IFACoreData.h"; sourceTree = "<group>"; };
+		F7A2AEE01FBCE107002B5B20 /* NSManagedObjectContext+IFACoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+IFACoreData.m"; sourceTree = "<group>"; };
+		F7A2AEE11FBCE108002B5B20 /* NSManagedObject+IFACoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+IFACoreData.m"; sourceTree = "<group>"; };
+		F7A2AEE61FBCE931002B5B20 /* NSObject+IFACoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+IFACoreData.m"; sourceTree = "<group>"; };
+		F7A2AEE71FBCE931002B5B20 /* NSObject+IFACoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+IFACoreData.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,9 +169,29 @@
 		F7A2AED51FBCDF83002B5B20 /* classes */ = {
 			isa = PBXGroup;
 			children = (
-				F7A2AED61FBCDF83002B5B20 /* IFAPersistenceManager.h */,
+				F719EA1A1FBE368E00A607D2 /* IFAPreferencesManager.h */,
+				F719EA191FBE368E00A607D2 /* IFAPreferencesManager.m */,
+				F719EA151FBE34C700A607D2 /* IFAHelpManager.h */,
+				F719EA161FBE34C700A607D2 /* IFAHelpManager.m */,
+				F719EA121FBE324100A607D2 /* IFAEnumerationEntity.h */,
+				F719EA111FBE324000A607D2 /* IFAEnumerationEntity.m */,
+				F719EA0D1FBE2F3400A607D2 /* IFASystemEntity.h */,
+				F719EA0E1FBE2F3400A607D2 /* IFASystemEntity.m */,
+				F719EA091FBE2D0D00A607D2 /* IFACoreDataUtils.h */,
+				F719EA0A1FBE2D0D00A607D2 /* IFACoreDataUtils.m */,
+				F719EA051FBE255500A607D2 /* IFACoreDataConstants.h */,
+				F719EA061FBE255500A607D2 /* IFACoreDataConstants.m */,
+				F719EA011FBE251A00A607D2 /* IFAEntityConfig.h */,
+				F719EA021FBE251A00A607D2 /* IFAEntityConfig.m */,
+				F7A2AEE71FBCE931002B5B20 /* NSObject+IFACoreData.h */,
+				F7A2AEE61FBCE931002B5B20 /* NSObject+IFACoreData.m */,
 				F7A2AED71FBCDF83002B5B20 /* IFACoreData.h */,
+				F7A2AED61FBCDF83002B5B20 /* IFAPersistenceManager.h */,
 				F7A2AED81FBCDF83002B5B20 /* IFAPersistenceManager.m */,
+				F7A2AEDE1FBCE107002B5B20 /* NSManagedObject+IFACoreData.h */,
+				F7A2AEE11FBCE108002B5B20 /* NSManagedObject+IFACoreData.m */,
+				F7A2AEDF1FBCE107002B5B20 /* NSManagedObjectContext+IFACoreData.h */,
+				F7A2AEE01FBCE107002B5B20 /* NSManagedObjectContext+IFACoreData.m */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -143,8 +203,18 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7A2AEE31FBCE108002B5B20 /* NSManagedObjectContext+IFACoreData.h in Headers */,
+				F719EA0B1FBE2D0E00A607D2 /* IFACoreDataUtils.h in Headers */,
+				F719EA141FBE324100A607D2 /* IFAEnumerationEntity.h in Headers */,
+				F719EA171FBE34C800A607D2 /* IFAHelpManager.h in Headers */,
 				F7A2AEDA1FBCDF83002B5B20 /* IFACoreData.h in Headers */,
+				F719EA0F1FBE2F3400A607D2 /* IFASystemEntity.h in Headers */,
+				F719EA1C1FBE368F00A607D2 /* IFAPreferencesManager.h in Headers */,
+				F719EA071FBE255600A607D2 /* IFACoreDataConstants.h in Headers */,
+				F719EA031FBE251B00A607D2 /* IFAEntityConfig.h in Headers */,
 				F7A2AED91FBCDF83002B5B20 /* IFAPersistenceManager.h in Headers */,
+				F719E9FF1FBE247100A607D2 /* NSObject+IFACoreData.h in Headers */,
+				F7A2AEE21FBCE108002B5B20 /* NSManagedObject+IFACoreData.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +416,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7A2AEDB1FBCDF83002B5B20 /* IFAPersistenceManager.m in Sources */,
+				F7A2AEE41FBCE108002B5B20 /* NSManagedObjectContext+IFACoreData.m in Sources */,
+				F7A2AEE51FBCE108002B5B20 /* NSManagedObject+IFACoreData.m in Sources */,
+				F719EA131FBE324100A607D2 /* IFAEnumerationEntity.m in Sources */,
+				F719EA0C1FBE2D0E00A607D2 /* IFACoreDataUtils.m in Sources */,
+				F719EA181FBE34C800A607D2 /* IFAHelpManager.m in Sources */,
+				F719EA081FBE255600A607D2 /* IFACoreDataConstants.m in Sources */,
+				F719EA1B1FBE368F00A607D2 /* IFAPreferencesManager.m in Sources */,
+				F719EA041FBE251B00A607D2 /* IFAEntityConfig.m in Sources */,
+				F719EA101FBE2F3400A607D2 /* IFASystemEntity.m in Sources */,
+				F719EA001FBE247900A607D2 /* NSObject+IFACoreData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

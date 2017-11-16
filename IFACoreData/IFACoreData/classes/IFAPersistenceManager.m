@@ -21,14 +21,13 @@
 #import "IFAPersistenceManager.h"
 @import CoreData;
 @import IFAFoundation;
-#import "IFACoreUiConstants.h"
-#import "NSManagedObject+IFACoreUI.h"
-#import "NSObject+IFACoreUI.h"
+#import "IFACoreDataConstants.h"
+#import "NSManagedObject+IFACoreData.h"
+#import "NSObject+IFACoreData.h"
 #import "IFAEntityConfig.h"
-#import "IFAUIUtils.h"
+#import "IFACoreDataUtils.h"
 #import "IFASystemEntity.h"
-#import "UIViewController+IFACoreUI.h"
-#import "NSManagedObjectContext+IFACoreUI.h"
+#import "NSManagedObjectContext+IFACoreData.h"
 
 static NSString *METADATA_KEY_SYSTEM_DB_TABLES_LOADED = @"systemDbTablesLoaded";
 static NSString *METADATA_VALUE_SYSTEM_DB_TABLES_LOADED = @"Y";
@@ -60,7 +59,7 @@ static NSString *METADATA_KEY_SYSTEM_DB_TABLES_VERSION = @"systemDbTablesVersion
     if (self) {
         self.savesInMainThreadOnly = YES;
         self.IFA_childManagedObjectContexts = [NSMutableArray new];
-        self.threadDictionaryKeyManagedObjectContext = [NSString stringWithFormat:@"com.infoaccent.IFACoreUI.PersistenceManager.ManagedObjectContext.%@",
+        self.threadDictionaryKeyManagedObjectContext = [NSString stringWithFormat:@"com.infoaccent.IFACoreData.PersistenceManager.ManagedObjectContext.%@",
                                                                                   [IFAUtils generateUuid]];
     }
     return self;
@@ -275,11 +274,11 @@ static NSString *METADATA_KEY_SYSTEM_DB_TABLES_VERSION = @"systemDbTablesVersion
 			if (ok) {
 				ok = NO;
 				if(anError!=NULL){
-					*anError = [IFAUIUtils newErrorContainerWithError:detailError];
+					*anError = [IFACoreDataUtils newErrorContainerWithError:detailError];
 					errorCreated = YES;
 				}
 			}else if (errorCreated) {
-				[IFAUIUtils addError:detailError toContainer:*anError];
+				[IFACoreDataUtils addError:detailError toContainer:*anError];
 			}
 		}
 	}
@@ -367,14 +366,14 @@ static NSString *METADATA_KEY_SYSTEM_DB_TABLES_VERSION = @"systemDbTablesVersion
                     break;
                 }
                 default:
-					[IFAUIUtils handleUnrecoverableError:error];
+					[IFACoreDataUtils handleUnrecoverableError:error];
                     break;
             }
             
 		}else if([error domain]== IFAErrorDomainCommon){
 			[message appendString:[error localizedDescription]];
 		}else{
-			[IFAUIUtils handleUnrecoverableError:error];
+			[IFACoreDataUtils handleUnrecoverableError:error];
 		}
 	}
 	
@@ -550,7 +549,7 @@ static NSString *METADATA_KEY_SYSTEM_DB_TABLES_VERSION = @"systemDbTablesVersion
                                                                                           options:options
                                                                                             error:&error];
     if (!persistentStore) {
-        [IFAUIUtils handleUnrecoverableError:error];
+        [IFACoreDataUtils handleUnrecoverableError:error];
     }
     return persistentStore;
 }
@@ -631,17 +630,17 @@ IFA_sqlStoreUrlForDatabaseResourceName:(NSString *)a_databaseResourceName
 	self.isCurrentManagedObjectDirty = NO;
 }
 
-- (BOOL)validateValue:(id *)a_value forProperty:(NSString *)a_propertyName inManagedObject:a_managedObject
-       alertPresenter:(UIViewController *)a_alertPresenter{
-	NSError* errorContainer;
-	if([a_managedObject validateValue:a_value forKey:a_propertyName error:&errorContainer]){
-		return YES;
-	}else {
-        [self handleCoreDataError:errorContainer withManagedObject:a_managedObject alertTitle:nil
-                   alertPresenter:a_alertPresenter];
-		return NO;
-	}
-}
+//- (BOOL)validateValue:(id *)a_value forProperty:(NSString *)a_propertyName inManagedObject:a_managedObject
+//       alertPresenter:(UIViewController *)a_alertPresenter{
+//    NSError* errorContainer;
+//    if([a_managedObject validateValue:a_value forKey:a_propertyName error:&errorContainer]){
+//        return YES;
+//    }else {
+//        [self handleCoreDataError:errorContainer withManagedObject:a_managedObject alertTitle:nil
+//                   alertPresenter:a_alertPresenter];
+//        return NO;
+//    }
+//}
 
 - (BOOL) save{
     return [self saveManagedObjectContext:[self currentManagedObjectContext]];
@@ -654,7 +653,7 @@ IFA_sqlStoreUrlForDatabaseResourceName:(NSString *)a_databaseResourceName
 		[self resetEditSession];
 		return YES;
 	}else{
-		[IFAUIUtils handleUnrecoverableError:error];
+		[IFACoreDataUtils handleUnrecoverableError:error];
 		return NO;
 	}
     
@@ -664,107 +663,107 @@ IFA_sqlStoreUrlForDatabaseResourceName:(NSString *)a_databaseResourceName
     return [self saveManagedObjectContext:self.managedObjectContext];
 }
 
-- (BOOL)saveObject:(NSManagedObject *)aManagedObject validationAlertPresenter:(UIViewController *)a_validationAlertPresenter{
-
-    [self IFA_willPerformCrudSaveForObject:aManagedObject];
-
-	if([self validateForSave:aManagedObject validationAlertPresenter:a_validationAlertPresenter]){
-
-        NSString *entityName = [aManagedObject ifa_entityName];
-
-		// Manage sequence if this entity's list can be reordered by the user
-		if ([self.entityConfig listReorderAllowedForObject:aManagedObject]) {
-            NSArray* all = [self findAllForEntity:entityName
-                            includePendingChanges:YES];
-			for (int i = 0; i < [all count]; i++) {
-                id managedObject = all[i];
-                NSNumber *seq = [NSNumber numberWithUnsignedInt:((i+1)*2)];
-                [managedObject setValue:seq forKey:@"seq"];
-			}
-		}
-
-        // Set last update date if required
-        NSString *lastUpdateDatePropertyName = [self.entityConfig lastUpdateDatePropertyNameForEntity:entityName];
-        if (lastUpdateDatePropertyName) {
-            [aManagedObject setValue:[NSDate date]
-                              forKey:lastUpdateDatePropertyName];
-        }
-
-		return [self save];
-        
-	}else {
-		return NO;
-	}
-}
+//- (BOOL)saveObject:(NSManagedObject *)aManagedObject validationAlertPresenter:(UIViewController *)a_validationAlertPresenter{
+//
+//    [self IFA_willPerformCrudSaveForObject:aManagedObject];
+//
+//    if([self validateForSave:aManagedObject validationAlertPresenter:a_validationAlertPresenter]){
+//
+//        NSString *entityName = [aManagedObject ifa_entityName];
+//
+//        // Manage sequence if this entity's list can be reordered by the user
+//        if ([self.entityConfig listReorderAllowedForObject:aManagedObject]) {
+//            NSArray* all = [self findAllForEntity:entityName
+//                            includePendingChanges:YES];
+//            for (int i = 0; i < [all count]; i++) {
+//                id managedObject = all[i];
+//                NSNumber *seq = [NSNumber numberWithUnsignedInt:((i+1)*2)];
+//                [managedObject setValue:seq forKey:@"seq"];
+//            }
+//        }
+//
+//        // Set last update date if required
+//        NSString *lastUpdateDatePropertyName = [self.entityConfig lastUpdateDatePropertyNameForEntity:entityName];
+//        if (lastUpdateDatePropertyName) {
+//            [aManagedObject setValue:[NSDate date]
+//                              forKey:lastUpdateDatePropertyName];
+//        }
+//
+//        return [self save];
+//
+//    }else {
+//        return NO;
+//    }
+//}
 
 /*
  Delete a managed object.
  */
-- (BOOL)deleteObject:(NSManagedObject *)aManagedObject validationAlertPresenter:(UIViewController *)a_validationAlertPresenter {
-    
-	if([self validateForDelete:aManagedObject alertPresenter:a_validationAlertPresenter]){
-        
-        // Run pre-delete method
-        //        NSLog(@"Running pre-delete method...");
-        [aManagedObject ifa_willDelete];
-        //        NSLog(@"Done");
-		
-		NSManagedObjectContext *moc = self.currentManagedObjectContext;
-		[moc deleteObject:aManagedObject];
-        
-        // Run post-delete method
-        //            NSLog(@"Running post-delete method...");
-        [aManagedObject ifa_didDelete];
-        //            NSLog(@"Done");
-        
-        return YES;
-		
-	}else {
-		return NO;
-	}
-    
-}
+//- (BOOL)deleteObject:(NSManagedObject *)aManagedObject validationAlertPresenter:(UIViewController *)a_validationAlertPresenter {
+//
+//    if([self validateForDelete:aManagedObject alertPresenter:a_validationAlertPresenter]){
+//
+//        // Run pre-delete method
+//        //        NSLog(@"Running pre-delete method...");
+//        [aManagedObject ifa_willDelete];
+//        //        NSLog(@"Done");
+//
+//        NSManagedObjectContext *moc = self.currentManagedObjectContext;
+//        [moc deleteObject:aManagedObject];
+//
+//        // Run post-delete method
+//        //            NSLog(@"Running post-delete method...");
+//        [aManagedObject ifa_didDelete];
+//        //            NSLog(@"Done");
+//
+//        return YES;
+//
+//    }else {
+//        return NO;
+//    }
+//
+//}
 
 /*
  Delete a managed object and save.
  */
-- (BOOL)deleteAndSaveObject:(NSManagedObject *)aManagedObject validationAlertPresenter:(UIViewController *)a_validationAlertPresenter{
-
-    [self IFA_willPerformCrudSaveForObject:aManagedObject];
-    
-	if([self validateForDelete:aManagedObject alertPresenter:a_validationAlertPresenter]){
-        
-        // Run pre-delete method
-        //        NSLog(@"Running pre-delete method...");
-        [aManagedObject ifa_willDelete];
-        //        NSLog(@"Done");
-		
-		NSManagedObjectContext *moc = self.currentManagedObjectContext;
-		[moc deleteObject:aManagedObject];
-		NSError *error;
-		if([moc save:&error]){
-            
-			[self resetEditSession];
-            
-            // Run post-delete method
-            //            NSLog(@"Running post-delete method...");
-            [aManagedObject ifa_didDelete];
-            //            NSLog(@"Done");
-            
-			return YES;
-            
-		}else {
-            
-			[self handleCoreDataError:error withManagedObject:aManagedObject alertTitle:nil alertPresenter:a_validationAlertPresenter];
-			return NO;
-            
-		}
-		
-	}else {
-		return NO;
-	}
-    
-}
+//- (BOOL)deleteAndSaveObject:(NSManagedObject *)aManagedObject validationAlertPresenter:(UIViewController *)a_validationAlertPresenter{
+//
+//    [self IFA_willPerformCrudSaveForObject:aManagedObject];
+//
+//    if([self validateForDelete:aManagedObject alertPresenter:a_validationAlertPresenter]){
+//
+//        // Run pre-delete method
+//        //        NSLog(@"Running pre-delete method...");
+//        [aManagedObject ifa_willDelete];
+//        //        NSLog(@"Done");
+//
+//        NSManagedObjectContext *moc = self.currentManagedObjectContext;
+//        [moc deleteObject:aManagedObject];
+//        NSError *error;
+//        if([moc save:&error]){
+//
+//            [self resetEditSession];
+//
+//            // Run post-delete method
+//            //            NSLog(@"Running post-delete method...");
+//            [aManagedObject ifa_didDelete];
+//            //            NSLog(@"Done");
+//
+//            return YES;
+//
+//        }else {
+//
+//            [self handleCoreDataError:error withManagedObject:aManagedObject alertTitle:nil alertPresenter:a_validationAlertPresenter];
+//            return NO;
+//
+//        }
+//
+//    }else {
+//        return NO;
+//    }
+//
+//}
 
 /**
  Roll back persistence changes
@@ -792,7 +791,7 @@ IFA_sqlStoreUrlForDatabaseResourceName:(NSString *)a_databaseResourceName
     NSManagedObjectContext *l_moc = [self currentManagedObjectContext];
     if(![l_moc obtainPermanentIDsForObjects:@[l_mo]
                                       error:&l_error]){
-        [IFAUIUtils handleUnrecoverableError:l_error];
+        [IFACoreDataUtils handleUnrecoverableError:l_error];
     };
 
     // Set UUID if required
@@ -849,19 +848,19 @@ IFA_sqlStoreUrlForDatabaseResourceName:(NSString *)a_databaseResourceName
 
 }
 
-- (void)deleteAllAndSaveForEntity:(NSString *)entityName
-         validationAlertPresenter:(UIViewController *)a_validationAlertPresenter{
-    [self deleteAllForEntity:entityName
-    validationAlertPresenter:a_validationAlertPresenter];
-    [self save];
-}
+//- (void)deleteAllAndSaveForEntity:(NSString *)entityName
+//         validationAlertPresenter:(UIViewController *)a_validationAlertPresenter{
+//    [self deleteAllForEntity:entityName
+//    validationAlertPresenter:a_validationAlertPresenter];
+//    [self save];
+//}
 
-- (void)deleteAllForEntity:(NSString *)a_entityName
-  validationAlertPresenter:(UIViewController *)a_validationAlertPresenter {
-    for (NSManagedObject *l_managedObject in [self findAllForEntity:a_entityName]) {
-        [l_managedObject ifa_deleteWithValidationAlertPresenter:a_validationAlertPresenter];
-    }
-}
+//- (void)deleteAllForEntity:(NSString *)a_entityName
+//  validationAlertPresenter:(UIViewController *)a_validationAlertPresenter {
+//    for (NSManagedObject *l_managedObject in [self findAllForEntity:a_entityName]) {
+//        [l_managedObject ifa_deleteWithValidationAlertPresenter:a_validationAlertPresenter];
+//    }
+//}
 
 - (NSManagedObject *) findSystemEntityById:(NSUInteger)anId entity:(NSString *)anEntityName{
 	NSPredicate *predicate = [NSPredicate predicateWithFormat:@"systemEntityId == %@", [NSNumber numberWithUnsignedInteger:anId]];
@@ -940,7 +939,7 @@ IFA_sqlStoreUrlForDatabaseResourceName:(NSString *)a_databaseResourceName
     NSError *error;
     NSUInteger count = [[self currentManagedObjectContext] countForFetchRequest:request error:&error];
     if (count==NSNotFound) {
-        [IFAUIUtils handleUnrecoverableError:error];
+        [IFACoreDataUtils handleUnrecoverableError:error];
     }
     return count;
 }
@@ -1215,7 +1214,7 @@ IFA_sqlStoreUrlForDatabaseResourceName:(NSString *)a_databaseResourceName
         if (l_mo) {
             [l_objects addObject:l_mo];
         }else{
-            [IFAUIUtils handleUnrecoverableError:l_error];
+            [IFACoreDataUtils handleUnrecoverableError:l_error];
         }
     }
     return l_objects;
@@ -1405,7 +1404,7 @@ IFA_sqlStoreUrlForDatabaseResourceName:(NSString *)a_databaseResourceName
                                                   attributes:nil
                                                        error:&error];
             if (!success) {
-                [IFAUIUtils handleUnrecoverableError:error];
+                [IFACoreDataUtils handleUnrecoverableError:error];
                 return;
             }
 #ifdef DEBUG
@@ -1538,27 +1537,27 @@ IFA_sqlStoreUrlForDatabaseResourceName:(NSString *)a_databaseResourceName
     
 }
 
-- (BOOL)validateForSave:(NSManagedObject *)aManagedObject validationAlertPresenter:(UIViewController *)a_validationAlertPresenter{
-	NSError *error;
-	BOOL coreDataValidationOk;
-	if([aManagedObject isInserted]){
-		coreDataValidationOk = [aManagedObject validateForInsert:&error];
-	}else {
-		coreDataValidationOk = [aManagedObject validateForUpdate:&error];
-	}
-	// Core data model validation
-	if (coreDataValidationOk) {
-		// Custom managed object validation
-		if ([aManagedObject ifa_validateForSave:&error]) {
-			// Custom unique key checks
-			if([self validateUniqueKeysForManagedObject:aManagedObject error:&error]){
-				return YES;
-			}
-		}
-	}
-	[self handleCoreDataError:error withManagedObject:aManagedObject alertTitle:nil alertPresenter:a_validationAlertPresenter];
-	return NO;
-}
+//- (BOOL)validateForSave:(NSManagedObject *)aManagedObject validationAlertPresenter:(UIViewController *)a_validationAlertPresenter{
+//    NSError *error;
+//    BOOL coreDataValidationOk;
+//    if([aManagedObject isInserted]){
+//        coreDataValidationOk = [aManagedObject validateForInsert:&error];
+//    }else {
+//        coreDataValidationOk = [aManagedObject validateForUpdate:&error];
+//    }
+//    // Core data model validation
+//    if (coreDataValidationOk) {
+//        // Custom managed object validation
+//        if ([aManagedObject ifa_validateForSave:&error]) {
+//            // Custom unique key checks
+//            if([self validateUniqueKeysForManagedObject:aManagedObject error:&error]){
+//                return YES;
+//            }
+//        }
+//    }
+//    [self handleCoreDataError:error withManagedObject:aManagedObject alertTitle:nil alertPresenter:a_validationAlertPresenter];
+//    return NO;
+//}
 
 - (void)pushChildManagedObjectContext{
     NSManagedObjectContext *l_moc = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSMainQueueConcurrencyType];
@@ -1639,7 +1638,7 @@ IFA_sqlStoreUrlForDatabaseResourceName:(NSString *)a_databaseResourceName
 	NSArray *resultArray = [[self currentManagedObjectContext] executeFetchRequest:aFetchRequest error:&error];
 	
 	if(resultArray==nil){
-		[IFAUIUtils handleUnrecoverableError:error];
+		[IFACoreDataUtils handleUnrecoverableError:error];
 	}
 	
 	return resultArray;
@@ -1721,7 +1720,7 @@ IFA_sqlStoreUrlForDatabaseResourceName:(NSString *)a_databaseResourceName
 
 + (BOOL)setValidationError:(NSError**)anError withMessage:(NSString*)anErrorMessage{
 	if (anError!=NULL) {
-		*anError = [IFAUIUtils newErrorWithCode:IFAErrorPersistenceValidation errorMessage:anErrorMessage];
+		*anError = [IFACoreDataUtils newErrorWithCode:IFAErrorPersistenceValidation errorMessage:anErrorMessage];
 		return NO;
 	}else {
 		return YES;
