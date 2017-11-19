@@ -24,8 +24,28 @@
 		F719EA181FBE34C800A607D2 /* IFAHelpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F719EA161FBE34C700A607D2 /* IFAHelpManager.m */; };
 		F719EA1B1FBE368F00A607D2 /* IFAPreferencesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F719EA191FBE368E00A607D2 /* IFAPreferencesManager.m */; };
 		F719EA1C1FBE368F00A607D2 /* IFAPreferencesManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F719EA1A1FBE368E00A607D2 /* IFAPreferencesManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F76B09431FC21EF400F036CA /* IFAPersistenceManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F76B09401FC21EF400F036CA /* IFAPersistenceManagerTests.m */; };
+		F76B09441FC21EF400F036CA /* IFAPersistentEntityChangeObserverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F76B09411FC21EF400F036CA /* IFAPersistentEntityChangeObserverTests.m */; };
+		F76B09451FC21EF400F036CA /* IFAPersistenceChangeDetectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F76B09421FC21EF400F036CA /* IFAPersistenceChangeDetectorTests.m */; };
+		F76B09481FC21F3D00F036CA /* IFACoreUITestsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F76B09461FC21F3D00F036CA /* IFACoreUITestsModel.xcdatamodeld */; };
+		F76B09611FC21F6500F036CA /* TestCoreDataEntity2+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F76B09491FC21F6200F036CA /* TestCoreDataEntity2+CoreDataProperties.m */; };
+		F76B09621FC21F6500F036CA /* TestCoreDataEntity4+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F76B094B1FC21F6200F036CA /* TestCoreDataEntity4+CoreDataProperties.m */; };
+		F76B09631FC21F6500F036CA /* TestCoreDataEntity5+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F76B094C1FC21F6200F036CA /* TestCoreDataEntity5+CoreDataClass.m */; };
+		F76B09641FC21F6500F036CA /* TestCoreDataEntity5+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F76B094E1FC21F6300F036CA /* TestCoreDataEntity5+CoreDataProperties.m */; };
+		F76B09651FC21F6500F036CA /* TestCoreDataEntity3+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F76B094F1FC21F6300F036CA /* TestCoreDataEntity3+CoreDataProperties.m */; };
+		F76B09661FC21F6500F036CA /* TestCoreDataEntity1+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F76B09501FC21F6300F036CA /* TestCoreDataEntity1+CoreDataProperties.m */; };
+		F76B09671FC21F6500F036CA /* TestCoreDataEntity3+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F76B09571FC21F6400F036CA /* TestCoreDataEntity3+CoreDataClass.m */; };
+		F76B09681FC21F6500F036CA /* TestCoreDataEntity4+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F76B09581FC21F6400F036CA /* TestCoreDataEntity4+CoreDataClass.m */; };
+		F76B09691FC21F6500F036CA /* TestCoreDataEntity4Child+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F76B09591FC21F6400F036CA /* TestCoreDataEntity4Child+CoreDataProperties.m */; };
+		F76B096A1FC21F6500F036CA /* TestCoreDataEntity1+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F76B095A1FC21F6400F036CA /* TestCoreDataEntity1+CoreDataClass.m */; };
+		F76B096B1FC21F6500F036CA /* TestCoreDataEntity2+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F76B095B1FC21F6400F036CA /* TestCoreDataEntity2+CoreDataClass.m */; };
+		F76B096C1FC21F6500F036CA /* TestCoreDataEntity4Child+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F76B095F1FC21F6500F036CA /* TestCoreDataEntity4Child+CoreDataClass.m */; };
+		F76B096F1FC21FC200F036CA /* IFACoreUITestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F76B096E1FC21FC200F036CA /* IFACoreUITestCase.m */; };
+		F76B09741FC221DB00F036CA /* IFAPersistenceChangeDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = F76B09701FC221DA00F036CA /* IFAPersistenceChangeDetector.m */; };
+		F76B09751FC221DB00F036CA /* IFAPersistentEntityChangeObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = F76B09711FC221DA00F036CA /* IFAPersistentEntityChangeObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F76B09761FC221DB00F036CA /* IFAPersistentEntityChangeObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = F76B09721FC221DA00F036CA /* IFAPersistentEntityChangeObserver.m */; };
+		F76B09771FC221DB00F036CA /* IFAPersistenceChangeDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = F76B09731FC221DA00F036CA /* IFAPersistenceChangeDetector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7A2AEC51FBCDF23002B5B20 /* IFACoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A2AEBB1FBCDF23002B5B20 /* IFACoreData.framework */; };
-		F7A2AECA1FBCDF23002B5B20 /* IFACoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A2AEC91FBCDF23002B5B20 /* IFACoreDataTests.swift */; };
 		F7A2AED91FBCDF83002B5B20 /* IFAPersistenceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F7A2AED61FBCDF83002B5B20 /* IFAPersistenceManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7A2AEDA1FBCDF83002B5B20 /* IFACoreData.h in Headers */ = {isa = PBXBuildFile; fileRef = F7A2AED71FBCDF83002B5B20 /* IFACoreData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7A2AEDB1FBCDF83002B5B20 /* IFAPersistenceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A2AED81FBCDF83002B5B20 /* IFAPersistenceManager.m */; };
@@ -67,10 +87,44 @@
 		F719EA161FBE34C700A607D2 /* IFAHelpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFAHelpManager.m; sourceTree = "<group>"; };
 		F719EA191FBE368E00A607D2 /* IFAPreferencesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFAPreferencesManager.m; sourceTree = "<group>"; };
 		F719EA1A1FBE368E00A607D2 /* IFAPreferencesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFAPreferencesManager.h; sourceTree = "<group>"; };
+		F76B093F1FC21EF300F036CA /* IFACoreDataTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IFACoreDataTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		F76B09401FC21EF400F036CA /* IFAPersistenceManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFAPersistenceManagerTests.m; sourceTree = "<group>"; };
+		F76B09411FC21EF400F036CA /* IFAPersistentEntityChangeObserverTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFAPersistentEntityChangeObserverTests.m; sourceTree = "<group>"; };
+		F76B09421FC21EF400F036CA /* IFAPersistenceChangeDetectorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFAPersistenceChangeDetectorTests.m; sourceTree = "<group>"; };
+		F76B09471FC21F3D00F036CA /* IFACoreUITestsModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IFACoreUITestsModel.xcdatamodel; sourceTree = "<group>"; };
+		F76B09491FC21F6200F036CA /* TestCoreDataEntity2+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestCoreDataEntity2+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F76B094A1FC21F6200F036CA /* TestCoreDataEntity5+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestCoreDataEntity5+CoreDataClass.h"; sourceTree = "<group>"; };
+		F76B094B1FC21F6200F036CA /* TestCoreDataEntity4+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestCoreDataEntity4+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F76B094C1FC21F6200F036CA /* TestCoreDataEntity5+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestCoreDataEntity5+CoreDataClass.m"; sourceTree = "<group>"; };
+		F76B094D1FC21F6200F036CA /* TestCoreDataEntity5+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestCoreDataEntity5+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F76B094E1FC21F6300F036CA /* TestCoreDataEntity5+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestCoreDataEntity5+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F76B094F1FC21F6300F036CA /* TestCoreDataEntity3+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestCoreDataEntity3+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F76B09501FC21F6300F036CA /* TestCoreDataEntity1+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestCoreDataEntity1+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F76B09511FC21F6300F036CA /* TestCoreDataEntity1+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestCoreDataEntity1+CoreDataClass.h"; sourceTree = "<group>"; };
+		F76B09521FC21F6300F036CA /* TestCoreDataEntity2+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestCoreDataEntity2+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F76B09531FC21F6300F036CA /* TestCoreDataEntity4+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestCoreDataEntity4+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F76B09541FC21F6300F036CA /* TestCoreDataEntity4Child+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestCoreDataEntity4Child+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F76B09551FC21F6300F036CA /* TestCoreDataEntity1+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestCoreDataEntity1+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F76B09561FC21F6400F036CA /* TestCoreDataEntity2+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestCoreDataEntity2+CoreDataClass.h"; sourceTree = "<group>"; };
+		F76B09571FC21F6400F036CA /* TestCoreDataEntity3+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestCoreDataEntity3+CoreDataClass.m"; sourceTree = "<group>"; };
+		F76B09581FC21F6400F036CA /* TestCoreDataEntity4+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestCoreDataEntity4+CoreDataClass.m"; sourceTree = "<group>"; };
+		F76B09591FC21F6400F036CA /* TestCoreDataEntity4Child+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestCoreDataEntity4Child+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F76B095A1FC21F6400F036CA /* TestCoreDataEntity1+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestCoreDataEntity1+CoreDataClass.m"; sourceTree = "<group>"; };
+		F76B095B1FC21F6400F036CA /* TestCoreDataEntity2+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestCoreDataEntity2+CoreDataClass.m"; sourceTree = "<group>"; };
+		F76B095C1FC21F6500F036CA /* TestCoreDataEntity3+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestCoreDataEntity3+CoreDataClass.h"; sourceTree = "<group>"; };
+		F76B095D1FC21F6500F036CA /* TestCoreDataEntity3+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestCoreDataEntity3+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F76B095E1FC21F6500F036CA /* TestCoreDataEntity4Child+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestCoreDataEntity4Child+CoreDataClass.h"; sourceTree = "<group>"; };
+		F76B095F1FC21F6500F036CA /* TestCoreDataEntity4Child+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestCoreDataEntity4Child+CoreDataClass.m"; sourceTree = "<group>"; };
+		F76B09601FC21F6500F036CA /* TestCoreDataEntity4+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestCoreDataEntity4+CoreDataClass.h"; sourceTree = "<group>"; };
+		F76B096D1FC21FC100F036CA /* IFACoreUITestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFACoreUITestCase.h; sourceTree = "<group>"; };
+		F76B096E1FC21FC200F036CA /* IFACoreUITestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFACoreUITestCase.m; sourceTree = "<group>"; };
+		F76B09701FC221DA00F036CA /* IFAPersistenceChangeDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFAPersistenceChangeDetector.m; sourceTree = "<group>"; };
+		F76B09711FC221DA00F036CA /* IFAPersistentEntityChangeObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFAPersistentEntityChangeObserver.h; sourceTree = "<group>"; };
+		F76B09721FC221DA00F036CA /* IFAPersistentEntityChangeObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFAPersistentEntityChangeObserver.m; sourceTree = "<group>"; };
+		F76B09731FC221DA00F036CA /* IFAPersistenceChangeDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFAPersistenceChangeDetector.h; sourceTree = "<group>"; };
 		F7A2AEBB1FBCDF23002B5B20 /* IFACoreData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IFACoreData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7A2AEBF1FBCDF23002B5B20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7A2AEC41FBCDF23002B5B20 /* IFACoreDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IFACoreDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7A2AEC91FBCDF23002B5B20 /* IFACoreDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IFACoreDataTests.swift; sourceTree = "<group>"; };
 		F7A2AECB1FBCDF23002B5B20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7A2AED61FBCDF83002B5B20 /* IFAPersistenceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFAPersistenceManager.h; sourceTree = "<group>"; };
 		F7A2AED71FBCDF83002B5B20 /* IFACoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFACoreData.h; sourceTree = "<group>"; };
@@ -160,8 +214,38 @@
 		F7A2AEC81FBCDF23002B5B20 /* IFACoreDataTests */ = {
 			isa = PBXGroup;
 			children = (
-				F7A2AEC91FBCDF23002B5B20 /* IFACoreDataTests.swift */,
+				F76B096D1FC21FC100F036CA /* IFACoreUITestCase.h */,
+				F76B096E1FC21FC200F036CA /* IFACoreUITestCase.m */,
+				F76B09511FC21F6300F036CA /* TestCoreDataEntity1+CoreDataClass.h */,
+				F76B095A1FC21F6400F036CA /* TestCoreDataEntity1+CoreDataClass.m */,
+				F76B09551FC21F6300F036CA /* TestCoreDataEntity1+CoreDataProperties.h */,
+				F76B09501FC21F6300F036CA /* TestCoreDataEntity1+CoreDataProperties.m */,
+				F76B09561FC21F6400F036CA /* TestCoreDataEntity2+CoreDataClass.h */,
+				F76B095B1FC21F6400F036CA /* TestCoreDataEntity2+CoreDataClass.m */,
+				F76B09521FC21F6300F036CA /* TestCoreDataEntity2+CoreDataProperties.h */,
+				F76B09491FC21F6200F036CA /* TestCoreDataEntity2+CoreDataProperties.m */,
+				F76B095C1FC21F6500F036CA /* TestCoreDataEntity3+CoreDataClass.h */,
+				F76B09571FC21F6400F036CA /* TestCoreDataEntity3+CoreDataClass.m */,
+				F76B095D1FC21F6500F036CA /* TestCoreDataEntity3+CoreDataProperties.h */,
+				F76B094F1FC21F6300F036CA /* TestCoreDataEntity3+CoreDataProperties.m */,
+				F76B09601FC21F6500F036CA /* TestCoreDataEntity4+CoreDataClass.h */,
+				F76B09581FC21F6400F036CA /* TestCoreDataEntity4+CoreDataClass.m */,
+				F76B09531FC21F6300F036CA /* TestCoreDataEntity4+CoreDataProperties.h */,
+				F76B094B1FC21F6200F036CA /* TestCoreDataEntity4+CoreDataProperties.m */,
+				F76B095E1FC21F6500F036CA /* TestCoreDataEntity4Child+CoreDataClass.h */,
+				F76B095F1FC21F6500F036CA /* TestCoreDataEntity4Child+CoreDataClass.m */,
+				F76B09541FC21F6300F036CA /* TestCoreDataEntity4Child+CoreDataProperties.h */,
+				F76B09591FC21F6400F036CA /* TestCoreDataEntity4Child+CoreDataProperties.m */,
+				F76B094A1FC21F6200F036CA /* TestCoreDataEntity5+CoreDataClass.h */,
+				F76B094C1FC21F6200F036CA /* TestCoreDataEntity5+CoreDataClass.m */,
+				F76B094D1FC21F6200F036CA /* TestCoreDataEntity5+CoreDataProperties.h */,
+				F76B094E1FC21F6300F036CA /* TestCoreDataEntity5+CoreDataProperties.m */,
+				F76B09421FC21EF400F036CA /* IFAPersistenceChangeDetectorTests.m */,
+				F76B09401FC21EF400F036CA /* IFAPersistenceManagerTests.m */,
+				F76B09411FC21EF400F036CA /* IFAPersistentEntityChangeObserverTests.m */,
 				F7A2AECB1FBCDF23002B5B20 /* Info.plist */,
+				F76B093F1FC21EF300F036CA /* IFACoreDataTests-Bridging-Header.h */,
+				F76B09461FC21F3D00F036CA /* IFACoreUITestsModel.xcdatamodeld */,
 			);
 			path = IFACoreDataTests;
 			sourceTree = "<group>";
@@ -169,6 +253,10 @@
 		F7A2AED51FBCDF83002B5B20 /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				F76B09731FC221DA00F036CA /* IFAPersistenceChangeDetector.h */,
+				F76B09701FC221DA00F036CA /* IFAPersistenceChangeDetector.m */,
+				F76B09711FC221DA00F036CA /* IFAPersistentEntityChangeObserver.h */,
+				F76B09721FC221DA00F036CA /* IFAPersistentEntityChangeObserver.m */,
 				F719EA1A1FBE368E00A607D2 /* IFAPreferencesManager.h */,
 				F719EA191FBE368E00A607D2 /* IFAPreferencesManager.m */,
 				F719EA151FBE34C700A607D2 /* IFAHelpManager.h */,
@@ -208,6 +296,7 @@
 				F719EA141FBE324100A607D2 /* IFAEnumerationEntity.h in Headers */,
 				F719EA171FBE34C800A607D2 /* IFAHelpManager.h in Headers */,
 				F7A2AEDA1FBCDF83002B5B20 /* IFACoreData.h in Headers */,
+				F76B09771FC221DB00F036CA /* IFAPersistenceChangeDetector.h in Headers */,
 				F719EA0F1FBE2F3400A607D2 /* IFASystemEntity.h in Headers */,
 				F719EA1C1FBE368F00A607D2 /* IFAPreferencesManager.h in Headers */,
 				F719EA071FBE255600A607D2 /* IFACoreDataConstants.h in Headers */,
@@ -215,6 +304,7 @@
 				F7A2AED91FBCDF83002B5B20 /* IFAPersistenceManager.h in Headers */,
 				F719E9FF1FBE247100A607D2 /* NSObject+IFACoreData.h in Headers */,
 				F7A2AEE21FBCE108002B5B20 /* NSManagedObject+IFACoreData.h in Headers */,
+				F76B09751FC221DB00F036CA /* IFAPersistentEntityChangeObserver.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +368,7 @@
 					};
 					F7A2AEC31FBCDF23002B5B20 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -420,11 +511,13 @@
 				F7A2AEE51FBCE108002B5B20 /* NSManagedObject+IFACoreData.m in Sources */,
 				F719EA131FBE324100A607D2 /* IFAEnumerationEntity.m in Sources */,
 				F719EA0C1FBE2D0E00A607D2 /* IFACoreDataUtils.m in Sources */,
+				F76B09761FC221DB00F036CA /* IFAPersistentEntityChangeObserver.m in Sources */,
 				F719EA181FBE34C800A607D2 /* IFAHelpManager.m in Sources */,
 				F719EA081FBE255600A607D2 /* IFACoreDataConstants.m in Sources */,
 				F719EA1B1FBE368F00A607D2 /* IFAPreferencesManager.m in Sources */,
 				F719EA041FBE251B00A607D2 /* IFAEntityConfig.m in Sources */,
 				F719EA101FBE2F3400A607D2 /* IFASystemEntity.m in Sources */,
+				F76B09741FC221DB00F036CA /* IFAPersistenceChangeDetector.m in Sources */,
 				F719EA001FBE247900A607D2 /* NSObject+IFACoreData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,7 +526,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7A2AECA1FBCDF23002B5B20 /* IFACoreDataTests.swift in Sources */,
+				F76B09621FC21F6500F036CA /* TestCoreDataEntity4+CoreDataProperties.m in Sources */,
+				F76B09441FC21EF400F036CA /* IFAPersistentEntityChangeObserverTests.m in Sources */,
+				F76B09691FC21F6500F036CA /* TestCoreDataEntity4Child+CoreDataProperties.m in Sources */,
+				F76B09681FC21F6500F036CA /* TestCoreDataEntity4+CoreDataClass.m in Sources */,
+				F76B09431FC21EF400F036CA /* IFAPersistenceManagerTests.m in Sources */,
+				F76B096A1FC21F6500F036CA /* TestCoreDataEntity1+CoreDataClass.m in Sources */,
+				F76B09641FC21F6500F036CA /* TestCoreDataEntity5+CoreDataProperties.m in Sources */,
+				F76B09481FC21F3D00F036CA /* IFACoreUITestsModel.xcdatamodeld in Sources */,
+				F76B09661FC21F6500F036CA /* TestCoreDataEntity1+CoreDataProperties.m in Sources */,
+				F76B096F1FC21FC200F036CA /* IFACoreUITestCase.m in Sources */,
+				F76B096B1FC21F6500F036CA /* TestCoreDataEntity2+CoreDataClass.m in Sources */,
+				F76B09671FC21F6500F036CA /* TestCoreDataEntity3+CoreDataClass.m in Sources */,
+				F76B09611FC21F6500F036CA /* TestCoreDataEntity2+CoreDataProperties.m in Sources */,
+				F76B09631FC21F6500F036CA /* TestCoreDataEntity5+CoreDataClass.m in Sources */,
+				F76B09651FC21F6500F036CA /* TestCoreDataEntity3+CoreDataProperties.m in Sources */,
+				F76B09451FC21EF400F036CA /* IFAPersistenceChangeDetectorTests.m in Sources */,
+				F76B096C1FC21F6500F036CA /* TestCoreDataEntity4Child+CoreDataClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,12 +718,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CA7BAD993C502F191C5CF041 /* Pods-IFACoreData-IFACoreDataTests.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UE3CPRMBX7;
 				INFOPLIST_FILE = IFACoreDataTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.infoaccent.IFACoreDataTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IFACoreDataTests/IFACoreDataTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -624,12 +736,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8FC00CA0E533B6027FC605C9 /* Pods-IFACoreData-IFACoreDataTests.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UE3CPRMBX7;
 				INFOPLIST_FILE = IFACoreDataTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.infoaccent.IFACoreDataTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IFACoreDataTests/IFACoreDataTests-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -666,6 +780,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F76B09461FC21F3D00F036CA /* IFACoreUITestsModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F76B09471FC21F3D00F036CA /* IFACoreUITestsModel.xcdatamodel */,
+			);
+			currentVersion = F76B09471FC21F3D00F036CA /* IFACoreUITestsModel.xcdatamodel */;
+			path = IFACoreUITestsModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F7A2AEB21FBCDF23002B5B20 /* Project object */;
 }

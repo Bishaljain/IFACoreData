@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16D32" minimumToolsVersion="Xcode 4.3" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="TestCoreDataEntity1" representedClassName="TestCoreDataEntity1" syncable="YES">
+        <attribute name="attribute1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute2" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="TestCoreDataEntity2" representedClassName="TestCoreDataEntity2" syncable="YES">
+        <attribute name="attribute1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute2" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="TestCoreDataEntity3" representedClassName="TestCoreDataEntity3" syncable="YES">
+        <attribute name="attribute1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute2" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="TestCoreDataEntity4" representedClassName="TestCoreDataEntity4" syncable="YES">
+        <attribute name="attribute1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute2" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="child" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TestCoreDataEntity4Child" inverseName="childParent" inverseEntity="TestCoreDataEntity4Child" syncable="YES"/>
+        <relationship name="children" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TestCoreDataEntity4Child" inverseName="childrenParent" inverseEntity="TestCoreDataEntity4Child" syncable="YES"/>
+        <relationship name="entity5ToMany" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TestCoreDataEntity5" inverseName="entity4ToMany" inverseEntity="TestCoreDataEntity5" syncable="YES"/>
+        <relationship name="entity5ToOne" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TestCoreDataEntity5" inverseName="entity4ToOne" inverseEntity="TestCoreDataEntity5" syncable="YES"/>
+    </entity>
+    <entity name="TestCoreDataEntity4Child" representedClassName="TestCoreDataEntity4Child" syncable="YES">
+        <attribute name="attribute1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute2" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="childParent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TestCoreDataEntity4" inverseName="child" inverseEntity="TestCoreDataEntity4" syncable="YES"/>
+        <relationship name="childrenParent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TestCoreDataEntity4" inverseName="children" inverseEntity="TestCoreDataEntity4" syncable="YES"/>
+    </entity>
+    <entity name="TestCoreDataEntity5" representedClassName="TestCoreDataEntity5" syncable="YES">
+        <attribute name="attribute1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute2" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="entity4ToMany" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TestCoreDataEntity4" inverseName="entity5ToMany" inverseEntity="TestCoreDataEntity4" syncable="YES"/>
+        <relationship name="entity4ToOne" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TestCoreDataEntity4" inverseName="entity5ToOne" inverseEntity="TestCoreDataEntity4" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="TestCoreDataEntity1" positionX="-63" positionY="-18" width="128" height="73"/>
+        <element name="TestCoreDataEntity2" positionX="-54" positionY="-9" width="128" height="73"/>
+        <element name="TestCoreDataEntity3" positionX="-36" positionY="9" width="128" height="73"/>
+        <element name="TestCoreDataEntity4" positionX="-45" positionY="9" width="128" height="150"/>
+        <element name="TestCoreDataEntity4Child" positionX="-45" positionY="45" width="128" height="105"/>
+        <element name="TestCoreDataEntity5" positionX="-36" positionY="27" width="128" height="105"/>
+    </elements>
+</model>
