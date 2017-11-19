@@ -28,6 +28,7 @@
 @class NSManagedObjectID;
 @class NSFetchedResultsController;
 @protocol IFAPersistenceManagerDelegate;
+@protocol IFAPersistenceManagerValidationAlertPresenter;
 
 @interface IFAPersistenceManager : NSObject
 
@@ -55,13 +56,13 @@
 
 - (void) resetEditSession;
 
-//- (BOOL)validateValue:(id *)a_value forProperty:(NSString *)a_propertyName inManagedObject:a_managedObject alertPresenter:(UIViewController *)a_alertPresenter;
+- (BOOL)validateValue:(id *)a_value forProperty:(NSString *)a_propertyName inManagedObject:a_managedObject alertPresenter:(id<IFAPersistenceManagerValidationAlertPresenter>)a_alertPresenter;
 - (BOOL)saveManagedObjectContext:(NSManagedObjectContext*)a_moc;
 - (BOOL)saveMainManagedObjectContext;
-//- (BOOL)saveObject:(NSManagedObject *)aManagedObject validationAlertPresenter:(UIViewController *)a_validationAlertPresenter;
+- (BOOL)saveObject:(NSManagedObject *)aManagedObject validationAlertPresenter:(id<IFAPersistenceManagerValidationAlertPresenter>)a_validationAlertPresenter;
 - (BOOL)save;
-//- (BOOL)deleteObject:(NSManagedObject *)aManagedObject validationAlertPresenter:(UIViewController *)a_validationAlertPresenter;
-//- (BOOL)deleteAndSaveObject:(NSManagedObject *)aManagedObject validationAlertPresenter:(UIViewController *)a_validationAlertPresenter;
+- (BOOL)deleteObject:(NSManagedObject *)aManagedObject validationAlertPresenter:(id<IFAPersistenceManagerValidationAlertPresenter>)a_validationAlertPresenter;
+- (BOOL)deleteAndSaveObject:(NSManagedObject *)aManagedObject validationAlertPresenter:(id<IFAPersistenceManagerValidationAlertPresenter>)a_validationAlertPresenter;
 - (void)rollback;
 //- (void)undo;
 
@@ -73,7 +74,7 @@
 - (NSUInteger)countEntity:(NSString *)entityName
             withPredicate:(NSPredicate *)predicate;
 
-//- (BOOL)validateForSave:(NSManagedObject *)aManagedObject validationAlertPresenter:(UIViewController *)a_validationAlertPresenter;
+- (BOOL)validateForSave:(NSManagedObject *)aManagedObject validationAlertPresenter:(id<IFAPersistenceManagerValidationAlertPresenter>)a_validationAlertPresenter;
 
 - (NSManagedObject *)instantiate:(NSString *)entityName;
 
@@ -91,11 +92,11 @@
                   includeSubentities:(BOOL)a_includeSubentities
                  usedForRelationship:(BOOL)a_usedForRelationship;
 
-//- (void)deleteAllAndSaveForEntity:(NSString *)entityName
-//         validationAlertPresenter:(UIViewController *)a_validationAlertPresenter;
+- (void)deleteAllAndSaveForEntity:(NSString *)entityName
+         validationAlertPresenter:(id<IFAPersistenceManagerValidationAlertPresenter>)a_validationAlertPresenter;
 
-//- (void)deleteAllForEntity:(NSString *)a_entityName
-//  validationAlertPresenter:(UIViewController *)a_validationAlertPresenter;
+- (void)deleteAllForEntity:(NSString *)a_entityName
+  validationAlertPresenter:(id<IFAPersistenceManagerValidationAlertPresenter>)a_validationAlertPresenter;
 
 - (NSManagedObject *) findSystemEntityById:(NSUInteger)anId entity:(NSString *)anEntityName;
 - (NSManagedObject *) findByName:(NSString*)aName entity:(NSString *)anEntityName;
@@ -326,5 +327,21 @@
 */
 - (void)  persistenceManager:(IFAPersistenceManager *)persistenceManager
 willPerformCrudSaveForObject:(NSManagedObject *)object;
+
+@end
+
+@protocol IFAPersistenceManagerValidationAlertPresenter <NSObject>
+
+@required
+
+/**
+ * This callback allows for the implementer to handle the presentation of validation related alerts in a platform specific way.
+ * @param persistenceManager The sender.
+ * @param title User friendly alert title.
+ * @param message User friendly alert message.
+ */
+- (void)                 persistenceManager:(IFAPersistenceManager *)persistenceManager
+didRequestToPresentValidationAlertWithTitle:(NSString *)title
+                                    message:(NSString *)message;
 
 @end

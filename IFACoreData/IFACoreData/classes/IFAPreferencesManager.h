@@ -20,6 +20,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class IFAPersistenceManager;
+
 @interface IFAPreferencesManager : NSObject
 
 - (instancetype)init NS_UNAVAILABLE;

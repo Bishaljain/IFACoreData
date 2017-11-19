@@ -64,13 +64,13 @@
 	// does nothing here, but the subclass can override it
 }
 
-//- (BOOL)ifa_deleteWithValidationAlertPresenter:(UIViewController *)a_validationAlertPresenter {
-//    return [[IFAPersistenceManager sharedInstance] deleteObject:self validationAlertPresenter:a_validationAlertPresenter];
-//}
-//
-//- (BOOL)ifa_deleteAndSaveWithValidationAlertPresenter:(UIViewController *)a_validationAlertPresenter {
-//    return [[IFAPersistenceManager sharedInstance] deleteAndSaveObject:self validationAlertPresenter:a_validationAlertPresenter];
-//}
+- (BOOL)ifa_deleteWithValidationAlertPresenter:(id<IFAPersistenceManagerValidationAlertPresenter> _Nullable)a_validationAlertPresenter {
+    return [[IFAPersistenceManager sharedInstance] deleteObject:self validationAlertPresenter:a_validationAlertPresenter];
+}
+
+- (BOOL)ifa_deleteAndSaveWithValidationAlertPresenter:(id<IFAPersistenceManagerValidationAlertPresenter> _Nullable)a_validationAlertPresenter {
+    return [[IFAPersistenceManager sharedInstance] deleteAndSaveObject:self validationAlertPresenter:a_validationAlertPresenter];
+}
 
 - (BOOL)ifa_hasValueChangedForKey:(NSString*)a_key{
     return [self.changedValues objectForKey:a_key]!=nil;
@@ -100,16 +100,16 @@
     return [[IFAPersistenceManager sharedInstance] findAllForEntity:[self ifa_entityName] includePendingChanges:a_includePendingChanges];
 }
 
-//+ (void)ifa_deleteAllWithValidationAlertPresenter:(UIViewController *)a_validationAlertPresenter {
-//    for (NSManagedObject *l_mo in [[IFAPersistenceManager sharedInstance] findAllForEntity:[self ifa_entityName]]) {
-//        [l_mo ifa_deleteWithValidationAlertPresenter:a_validationAlertPresenter];
-//    }
-//}
-//
-//+ (void)ifa_deleteAllAndSaveWithValidationAlertPresenter:(UIViewController *)a_validationAlertPresenter {
-//    [self ifa_deleteAllWithValidationAlertPresenter:a_validationAlertPresenter];
-//    [[IFAPersistenceManager sharedInstance] save];
-//}
++ (void)ifa_deleteAllWithValidationAlertPresenter:(id<IFAPersistenceManagerValidationAlertPresenter> _Nullable)a_validationAlertPresenter {
+    for (NSManagedObject *l_mo in [[IFAPersistenceManager sharedInstance] findAllForEntity:[self ifa_entityName]]) {
+        [l_mo ifa_deleteWithValidationAlertPresenter:a_validationAlertPresenter];
+    }
+}
+
++ (void)ifa_deleteAllAndSaveWithValidationAlertPresenter:(id<IFAPersistenceManagerValidationAlertPresenter> _Nullable)a_validationAlertPresenter {
+    [self ifa_deleteAllWithValidationAlertPresenter:a_validationAlertPresenter];
+    [[IFAPersistenceManager sharedInstance] save];
+}
 
 #pragma mark - Private
 

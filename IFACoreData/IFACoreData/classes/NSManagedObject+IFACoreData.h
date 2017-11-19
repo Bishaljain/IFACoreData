@@ -23,6 +23,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol IFAPersistenceManagerValidationAlertPresenter;
+
 @interface NSManagedObject (IFACoreData)
 
 @property (nonatomic, readonly) NSString *ifa_stringId;
@@ -32,9 +34,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)ifa_validateForSave:(NSError**)anError;
 - (void)ifa_willDelete;
 - (void)ifa_didDelete;
-//todo: decouple UI code
-//- (BOOL)ifa_deleteWithValidationAlertPresenter:(UIViewController * _Nullable)a_validationAlertPresenter;
-//- (BOOL)ifa_deleteAndSaveWithValidationAlertPresenter:(UIViewController * _Nullable)a_validationAlertPresenter;
+- (BOOL)ifa_deleteWithValidationAlertPresenter:(id<IFAPersistenceManagerValidationAlertPresenter> _Nullable)a_validationAlertPresenter;
+- (BOOL)ifa_deleteAndSaveWithValidationAlertPresenter:(id<IFAPersistenceManagerValidationAlertPresenter> _Nullable)a_validationAlertPresenter;
 - (BOOL)ifa_hasValueChangedForKey:(NSString*)a_key;
 
 /**
@@ -49,9 +50,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)ifa_instantiate;
 + (NSMutableArray *)ifa_findAll;
 + (NSMutableArray *)ifa_findAllIncludingPendingChanges:(BOOL)a_includePendingChanges;
-//todo: decouple UI code
-//+ (void)ifa_deleteAllWithValidationAlertPresenter:(UIViewController * _Nullable)a_validationAlertPresenter;
-//+ (void)ifa_deleteAllAndSaveWithValidationAlertPresenter:(UIViewController * _Nullable)a_validationAlertPresenter;
++ (void)ifa_deleteAllWithValidationAlertPresenter:(id<IFAPersistenceManagerValidationAlertPresenter> _Nullable)a_validationAlertPresenter;
++ (void)ifa_deleteAllAndSaveWithValidationAlertPresenter:(id<IFAPersistenceManagerValidationAlertPresenter> _Nullable)a_validationAlertPresenter;
 
 @end
 
