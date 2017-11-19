@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-    s.name              = '     '
+    s.name              = 'IFACoreData'
     s.version           = '1.0.0'
     s.summary           = 'Cocoa Touch framework containing enhancements on top of the CoreData framework for iOS apps and app extensions.'
     s.homepage          = 'https://github.com/marcelo-schroeder/IFACoreData'
