@@ -186,11 +186,4 @@
     return [NSString stringWithFormat:NSLocalizedStringFromTable(@"(no %@)", @"IFALocalizable", @"(no <ENTITY_NAME>)"), [[[IFAPersistenceManager sharedInstance].entityConfig labelForEntity:[self ifa_entityName]] lowercaseString]];
 }
 
-+ (UIImage *)ifa_classBundleImageNamed:(NSString *)a_imageName {
-    return [UIImage imageNamed:a_imageName
-                      inBundle:[self ifa_classBundle]
- compatibleWithTraitCollection:nil];
-}
-
-
 @end

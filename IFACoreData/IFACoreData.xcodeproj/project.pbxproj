@@ -45,6 +45,7 @@
 		F76B09751FC221DB00F036CA /* IFAPersistentEntityChangeObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = F76B09711FC221DA00F036CA /* IFAPersistentEntityChangeObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F76B09761FC221DB00F036CA /* IFAPersistentEntityChangeObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = F76B09721FC221DA00F036CA /* IFAPersistentEntityChangeObserver.m */; };
 		F76B09771FC221DB00F036CA /* IFAPersistenceChangeDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = F76B09731FC221DA00F036CA /* IFAPersistenceChangeDetector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F76B09791FC22C2300F036CA /* NSManagedObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76B09781FC22C2200F036CA /* NSManagedObjectTests.swift */; };
 		F7A2AEC51FBCDF23002B5B20 /* IFACoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A2AEBB1FBCDF23002B5B20 /* IFACoreData.framework */; };
 		F7A2AED91FBCDF83002B5B20 /* IFAPersistenceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F7A2AED61FBCDF83002B5B20 /* IFAPersistenceManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7A2AEDA1FBCDF83002B5B20 /* IFACoreData.h in Headers */ = {isa = PBXBuildFile; fileRef = F7A2AED71FBCDF83002B5B20 /* IFACoreData.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -122,6 +123,7 @@
 		F76B09711FC221DA00F036CA /* IFAPersistentEntityChangeObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFAPersistentEntityChangeObserver.h; sourceTree = "<group>"; };
 		F76B09721FC221DA00F036CA /* IFAPersistentEntityChangeObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFAPersistentEntityChangeObserver.m; sourceTree = "<group>"; };
 		F76B09731FC221DA00F036CA /* IFAPersistenceChangeDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFAPersistenceChangeDetector.h; sourceTree = "<group>"; };
+		F76B09781FC22C2200F036CA /* NSManagedObjectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSManagedObjectTests.swift; sourceTree = "<group>"; };
 		F7A2AEBB1FBCDF23002B5B20 /* IFACoreData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IFACoreData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7A2AEBF1FBCDF23002B5B20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7A2AEC41FBCDF23002B5B20 /* IFACoreDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IFACoreDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -214,6 +216,7 @@
 		F7A2AEC81FBCDF23002B5B20 /* IFACoreDataTests */ = {
 			isa = PBXGroup;
 			children = (
+				F76B09781FC22C2200F036CA /* NSManagedObjectTests.swift */,
 				F76B096D1FC21FC100F036CA /* IFACoreDataTestCase.h */,
 				F76B096E1FC21FC200F036CA /* IFACoreDataTestCase.m */,
 				F76B09511FC21F6300F036CA /* TestCoreDataEntity1+CoreDataClass.h */,
@@ -543,6 +546,7 @@
 				F76B09651FC21F6500F036CA /* TestCoreDataEntity3+CoreDataProperties.m in Sources */,
 				F76B09451FC21EF400F036CA /* IFAPersistenceChangeDetectorTests.m in Sources */,
 				F76B096C1FC21F6500F036CA /* TestCoreDataEntity4Child+CoreDataClass.m in Sources */,
+				F76B09791FC22C2300F036CA /* NSManagedObjectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

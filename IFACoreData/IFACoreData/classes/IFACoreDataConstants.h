@@ -25,28 +25,10 @@
 
 }
 
-//extern CGFloat const IFAMinimumTapAreaDimension;
-
-/**
-* Table view cell horizontal indentation in points when in edit mode.
-*/
-//extern CGFloat const IFATableViewEditingCellXOffset;
-
-//extern CGFloat const IFAFormSectionHeaderDefaultHeight;
-//extern CGFloat const IFATableViewCellSeparatorDefaultInsetLeft;
-//extern CGFloat const IFAIPhoneStatusBarDoubleHeight;
-//extern NSTimeInterval const IFAAnimationDuration;
-
 extern NSString* const IFACacheKeyEntityConfigDictionary;
-//extern NSString* const IFACacheKeyMenuViewControllersDictionary;
 
 // Notifications
 extern NSString* const IFANotificationPersistentEntityChange;
-//extern NSString* const IFANotificationContextSwitchRequest;
-//extern NSString* const IFANotificationContextSwitchRequestGranted;
-//extern NSString* const IFANotificationContextSwitchRequestDenied;
-//extern NSString* const IFANotificationMenuBarButtonItemInvalidated;
-//extern NSString* const IFANotificationLocationAuthorizationStatusChange;
 
 // Dictionary Keys
 extern NSString* const IFAKeyInsertedObjects;
@@ -69,43 +51,7 @@ enum {
     IFAErrorPersistenceValidation = 1000,
     IFAErrorPersistenceDuplicateKey = 1010,
 
-//    IFAViewTagActionSheetCancel = 2000,
-//    IFAViewTagActionSheetDelete = 2010,
-//    IFAViewTagHelpBackground = 2020,
-//    IFAViewTagHelpForeground = 2030,
-//    IFAViewTagHelpButton = 2050,
-//
-//    IFABarItemTagHelpButton = 2500,
-//    IFABarItemTagEditButton = 2510,
-//    IFABarItemTagBackButton = 2520, // custom back button
-//    IFABarItemTagLeftSlidingPaneButton = 2530, // split view controller master on iPad, left under view on iPhone
-//    IFABarItemTagAutomatedSpacingButton = 2540, // bar button item spacing automation
-
 };
-
-/* typedefs */
-
-//typedef NS_ENUM(NSUInteger, IFABarButtonItemType){
-//    IFABarButtonItemTypeAdd,
-//    IFABarButtonItemTypeDelete,
-//    IFABarButtonItemTypeSelectNone,
-//    IFABarButtonItemTypeCancel,
-//    IFABarButtonItemTypeFlexibleSpace,
-//    IFABarButtonItemTypeDone,
-//    IFABarButtonItemTypePreviousPage,
-//    IFABarButtonItemTypeNextPage,
-//    IFABarButtonItemTypeSelectNow,
-//    IFABarButtonItemTypeFixedSpace,
-//    IFABarButtonItemTypeSelectAll,
-//    IFABarButtonItemTypeAction,
-//    IFABarButtonItemTypeSelectToday,
-//    IFABarButtonItemTypeRefresh,
-//    IFABarButtonItemTypeDismiss,
-//    IFABarButtonItemTypeBack,
-//    IFABarButtonItemTypeInfo,
-//    IFABarButtonItemTypeUserLocation,
-//    IFABarButtonItemTypeList,
-//};
 
 typedef NS_ENUM(NSUInteger, IFAEditorType) {
 

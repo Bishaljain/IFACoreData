@@ -22,23 +22,10 @@
 
 @implementation IFACoreDataConstants
 
-//CGFloat const IFAMinimumTapAreaDimension = 44;
-//CGFloat const IFATableViewEditingCellXOffset = 38;
-//CGFloat const IFAFormSectionHeaderDefaultHeight = 39;
-//CGFloat const IFATableViewCellSeparatorDefaultInsetLeft = 15;
-//CGFloat const IFAIPhoneStatusBarDoubleHeight = 40;
-//NSTimeInterval const IFAAnimationDuration = 0.3;
-
 NSString* const IFACacheKeyEntityConfigDictionary = @"ifa.entityConfigDictionary";
-//NSString* const IFACacheKeyMenuViewControllersDictionary = @"ifa.menuViewControllersDictionary";
 
 // Notifications
 NSString* const IFANotificationPersistentEntityChange = @"ifa.persistentEntityChange";
-//NSString* const IFANotificationContextSwitchRequest = @"ifa.contextSwitchRequest";
-//NSString* const IFANotificationContextSwitchRequestGranted = @"ifa.contextSwitchRequestGranted";
-//NSString* const IFANotificationContextSwitchRequestDenied = @"ifa.contextSwitchRequestDenied";
-//NSString* const IFANotificationMenuBarButtonItemInvalidated = @"ifa.menuBarButtonItemInvalidated";
-//NSString* const IFANotificationLocationAuthorizationStatusChange = @"ifa.locationAuthorizationStatusChange";
 
 // Dictionary Keys
 NSString* const IFAKeyInsertedObjects = @"ifa.key.insertedObjects";
