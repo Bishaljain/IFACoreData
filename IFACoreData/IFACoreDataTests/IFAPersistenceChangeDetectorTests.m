@@ -17,7 +17,7 @@
 //  limitations under the License.
 //
 
-#import "IFACoreUITestCase.h"
+#import "IFACoreDataTestCase.h"
 @import IFACoreData;
 #import "TestCoreDataEntity1+CoreDataClass.h"
 #import "TestCoreDataEntity1+CoreDataProperties.h"
@@ -26,7 +26,7 @@
 @import OCHamcrest;
 @import OCMock;
 
-@interface IFAPersistenceChangeDetectorTests : IFACoreUITestCase
+@interface IFAPersistenceChangeDetectorTests : IFACoreDataTestCase
 @property(nonatomic) IFAPersistenceChangeDetector *persistenceChangeDetector;
 @end
 

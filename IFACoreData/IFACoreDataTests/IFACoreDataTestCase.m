@@ -15,11 +15,11 @@
 //  limitations under the License.
 //
 
-#import "IFACoreUITestCase.h"
+#import "IFACoreDataTestCase.h"
 @import IFACoreData;
 @import IFATestingSupport;
 
-@implementation IFACoreUITestCase {
+@implementation IFACoreDataTestCase {
 
 }
 
@@ -29,7 +29,7 @@
     [persistenceManager configureWithDatabaseResourceName:nil
                        databaseResourceRelativeFolderPath:nil
                        databaseResourceAbsoluteFolderPath:nil
-                           managedObjectModelResourceName:@"IFACoreUITestsModel"
+                           managedObjectModelResourceName:@"IFACoreDataTestsModel"
                          managedObjectModelResourceBundle:[NSBundle bundleForClass:[self class]]
                                 managedObjectModelVersion:nil
                                               mergePolicy:nil

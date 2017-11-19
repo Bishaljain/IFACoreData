@@ -5,7 +5,7 @@
 //  Created by: Marcelo Schroeder
 //
 
-#import "IFACoreUITestCase.h"
+#import "IFACoreDataTestCase.h"
 @import IFACoreData;
 #import "TestCoreDataEntity1+CoreDataClass.h"
 #import "TestCoreDataEntity1+CoreDataProperties.h"
@@ -14,7 +14,7 @@
 @import OCHamcrest;
 @import OCMock;
 
-@interface IFAPersistenceManagerTests : IFACoreUITestCase
+@interface IFAPersistenceManagerTests : IFACoreDataTestCase
 @property(nonatomic, strong) IFAPersistenceManager *persistenceManager;
 @property(nonatomic, strong) id persistenceManagerPartialMock;
 @property(nonatomic, strong) TestCoreDataEntity1 *managedObject1;

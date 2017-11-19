@@ -27,7 +27,7 @@
 		F76B09431FC21EF400F036CA /* IFAPersistenceManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F76B09401FC21EF400F036CA /* IFAPersistenceManagerTests.m */; };
 		F76B09441FC21EF400F036CA /* IFAPersistentEntityChangeObserverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F76B09411FC21EF400F036CA /* IFAPersistentEntityChangeObserverTests.m */; };
 		F76B09451FC21EF400F036CA /* IFAPersistenceChangeDetectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F76B09421FC21EF400F036CA /* IFAPersistenceChangeDetectorTests.m */; };
-		F76B09481FC21F3D00F036CA /* IFACoreUITestsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F76B09461FC21F3D00F036CA /* IFACoreUITestsModel.xcdatamodeld */; };
+		F76B09481FC21F3D00F036CA /* IFACoreDataTestsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F76B09461FC21F3D00F036CA /* IFACoreDataTestsModel.xcdatamodeld */; };
 		F76B09611FC21F6500F036CA /* TestCoreDataEntity2+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F76B09491FC21F6200F036CA /* TestCoreDataEntity2+CoreDataProperties.m */; };
 		F76B09621FC21F6500F036CA /* TestCoreDataEntity4+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F76B094B1FC21F6200F036CA /* TestCoreDataEntity4+CoreDataProperties.m */; };
 		F76B09631FC21F6500F036CA /* TestCoreDataEntity5+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F76B094C1FC21F6200F036CA /* TestCoreDataEntity5+CoreDataClass.m */; };
@@ -40,7 +40,7 @@
 		F76B096A1FC21F6500F036CA /* TestCoreDataEntity1+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F76B095A1FC21F6400F036CA /* TestCoreDataEntity1+CoreDataClass.m */; };
 		F76B096B1FC21F6500F036CA /* TestCoreDataEntity2+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F76B095B1FC21F6400F036CA /* TestCoreDataEntity2+CoreDataClass.m */; };
 		F76B096C1FC21F6500F036CA /* TestCoreDataEntity4Child+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F76B095F1FC21F6500F036CA /* TestCoreDataEntity4Child+CoreDataClass.m */; };
-		F76B096F1FC21FC200F036CA /* IFACoreUITestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F76B096E1FC21FC200F036CA /* IFACoreUITestCase.m */; };
+		F76B096F1FC21FC200F036CA /* IFACoreDataTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F76B096E1FC21FC200F036CA /* IFACoreDataTestCase.m */; };
 		F76B09741FC221DB00F036CA /* IFAPersistenceChangeDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = F76B09701FC221DA00F036CA /* IFAPersistenceChangeDetector.m */; };
 		F76B09751FC221DB00F036CA /* IFAPersistentEntityChangeObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = F76B09711FC221DA00F036CA /* IFAPersistentEntityChangeObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F76B09761FC221DB00F036CA /* IFAPersistentEntityChangeObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = F76B09721FC221DA00F036CA /* IFAPersistentEntityChangeObserver.m */; };
@@ -116,8 +116,8 @@
 		F76B095E1FC21F6500F036CA /* TestCoreDataEntity4Child+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestCoreDataEntity4Child+CoreDataClass.h"; sourceTree = "<group>"; };
 		F76B095F1FC21F6500F036CA /* TestCoreDataEntity4Child+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestCoreDataEntity4Child+CoreDataClass.m"; sourceTree = "<group>"; };
 		F76B09601FC21F6500F036CA /* TestCoreDataEntity4+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestCoreDataEntity4+CoreDataClass.h"; sourceTree = "<group>"; };
-		F76B096D1FC21FC100F036CA /* IFACoreUITestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFACoreUITestCase.h; sourceTree = "<group>"; };
-		F76B096E1FC21FC200F036CA /* IFACoreUITestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFACoreUITestCase.m; sourceTree = "<group>"; };
+		F76B096D1FC21FC100F036CA /* IFACoreDataTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFACoreDataTestCase.h; sourceTree = "<group>"; };
+		F76B096E1FC21FC200F036CA /* IFACoreDataTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFACoreDataTestCase.m; sourceTree = "<group>"; };
 		F76B09701FC221DA00F036CA /* IFAPersistenceChangeDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFAPersistenceChangeDetector.m; sourceTree = "<group>"; };
 		F76B09711FC221DA00F036CA /* IFAPersistentEntityChangeObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFAPersistentEntityChangeObserver.h; sourceTree = "<group>"; };
 		F76B09721FC221DA00F036CA /* IFAPersistentEntityChangeObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFAPersistentEntityChangeObserver.m; sourceTree = "<group>"; };
@@ -214,8 +214,8 @@
 		F7A2AEC81FBCDF23002B5B20 /* IFACoreDataTests */ = {
 			isa = PBXGroup;
 			children = (
-				F76B096D1FC21FC100F036CA /* IFACoreUITestCase.h */,
-				F76B096E1FC21FC200F036CA /* IFACoreUITestCase.m */,
+				F76B096D1FC21FC100F036CA /* IFACoreDataTestCase.h */,
+				F76B096E1FC21FC200F036CA /* IFACoreDataTestCase.m */,
 				F76B09511FC21F6300F036CA /* TestCoreDataEntity1+CoreDataClass.h */,
 				F76B095A1FC21F6400F036CA /* TestCoreDataEntity1+CoreDataClass.m */,
 				F76B09551FC21F6300F036CA /* TestCoreDataEntity1+CoreDataProperties.h */,
@@ -245,7 +245,7 @@
 				F76B09411FC21EF400F036CA /* IFAPersistentEntityChangeObserverTests.m */,
 				F7A2AECB1FBCDF23002B5B20 /* Info.plist */,
 				F76B093F1FC21EF300F036CA /* IFACoreDataTests-Bridging-Header.h */,
-				F76B09461FC21F3D00F036CA /* IFACoreUITestsModel.xcdatamodeld */,
+				F76B09461FC21F3D00F036CA /* IFACoreDataTestsModel.xcdatamodeld */,
 			);
 			path = IFACoreDataTests;
 			sourceTree = "<group>";
@@ -533,9 +533,9 @@
 				F76B09431FC21EF400F036CA /* IFAPersistenceManagerTests.m in Sources */,
 				F76B096A1FC21F6500F036CA /* TestCoreDataEntity1+CoreDataClass.m in Sources */,
 				F76B09641FC21F6500F036CA /* TestCoreDataEntity5+CoreDataProperties.m in Sources */,
-				F76B09481FC21F3D00F036CA /* IFACoreUITestsModel.xcdatamodeld in Sources */,
+				F76B09481FC21F3D00F036CA /* IFACoreDataTestsModel.xcdatamodeld in Sources */,
 				F76B09661FC21F6500F036CA /* TestCoreDataEntity1+CoreDataProperties.m in Sources */,
-				F76B096F1FC21FC200F036CA /* IFACoreUITestCase.m in Sources */,
+				F76B096F1FC21FC200F036CA /* IFACoreDataTestCase.m in Sources */,
 				F76B096B1FC21F6500F036CA /* TestCoreDataEntity2+CoreDataClass.m in Sources */,
 				F76B09671FC21F6500F036CA /* TestCoreDataEntity3+CoreDataClass.m in Sources */,
 				F76B09611FC21F6500F036CA /* TestCoreDataEntity2+CoreDataProperties.m in Sources */,
@@ -782,13 +782,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		F76B09461FC21F3D00F036CA /* IFACoreUITestsModel.xcdatamodeld */ = {
+		F76B09461FC21F3D00F036CA /* IFACoreDataTestsModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				F76B09471FC21F3D00F036CA /* IFACoreUITestsModel.xcdatamodel */,
 			);
 			currentVersion = F76B09471FC21F3D00F036CA /* IFACoreUITestsModel.xcdatamodel */;
-			path = IFACoreUITestsModel.xcdatamodeld;
+			path = IFACoreDataTestsModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

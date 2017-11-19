@@ -6,7 +6,7 @@
 //
 
 @import IFACoreData;
-#import "IFACoreUITestCase.h"
+#import "IFACoreDataTestCase.h"
 #import "TestCoreDataEntity1+CoreDataClass.h"
 #import "TestCoreDataEntity1+CoreDataProperties.h"
 #import "TestCoreDataEntity2+CoreDataClass.h"
@@ -15,7 +15,7 @@
 #import "TestCoreDataEntity3+CoreDataProperties.h"
 @import IFATestingSupport;
 
-@interface IFAPersistentEntityChangeObserverTests : IFACoreUITestCase <IFAPersistentEntityChangeObserverDelegate>
+@interface IFAPersistentEntityChangeObserverTests : IFACoreDataTestCase <IFAPersistentEntityChangeObserverDelegate>
 @property (nonatomic, strong) NSMutableDictionary *delegateCallbacksByClass;
 @property(nonatomic, strong) TestCoreDataEntity1 *obj11;
 @property(nonatomic, strong) TestCoreDataEntity1 *obj12;

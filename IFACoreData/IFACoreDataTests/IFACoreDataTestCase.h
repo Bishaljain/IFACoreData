@@ -19,7 +19,7 @@
 
 @class IFAPersistenceManager;
 
-@interface IFACoreUITestCase : XCTestCase
+@interface IFACoreDataTestCase : XCTestCase
 
 - (void)createInMemoryTestDatabaseWithPersistenceManager:(IFAPersistenceManager *)persistenceManager;
 - (void)createInMemoryTestDatabase;
