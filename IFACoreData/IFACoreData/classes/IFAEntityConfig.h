@@ -42,7 +42,6 @@ typedef NS_ENUM(NSUInteger, IFAEntityConfigFieldType){
 - (id)initWithManagedObjectContext:(NSManagedObjectContext *)a_managedObjectContext
                             bundle:(NSBundle *)a_bundle;
 
-- (NSIndexPath*)indexPathForProperty:(NSString*)aPropertyName inObject:(NSObject*)aObject inForm:(NSString*)aFormName createMode:(BOOL)aCreateMode;
 - (NSString*)labelForProperty:(NSString*)aPropertyName inEntity:(NSString*)anEntityName;
 - (NSString*)labelForProperty:(NSString*)aPropertyName inObject:(NSObject*)anObject;
 - (IFADataType)dataTypeForProperty:(NSString*)aPropertyName inEntity:(NSString*)anEntityName;
@@ -75,12 +74,6 @@ typedef NS_ENUM(NSUInteger, IFAEntityConfigFieldType){
 - (NSString*)indefiniteArticleForEntity:(NSString*)anEntityName;
 - (IFAEditorType)fieldEditorForEntity:(NSString*)anEntityName;
 - (NSString*)labelForObject:(NSObject*)anObject;
-- (NSString*)labelForViewControllerFieldTypeAtIndexPath:(NSIndexPath*)anIndexPath inObject:(NSObject*)anObject inForm:(NSString*)aFormName createMode:(BOOL)aCreateMode;
-- (BOOL)isModalForViewControllerFieldTypeAtIndexPath:(NSIndexPath*)anIndexPath inObject:(NSObject*)anObject inForm:(NSString*)aFormName createMode:(BOOL)aCreateMode;
-- (NSString*)classNameForViewControllerFieldTypeAtIndexPath:(NSIndexPath*)anIndexPath inObject:(NSObject*)anObject inForm:(NSString*)aFormName createMode:(BOOL)aCreateMode;
-- (NSDictionary*)propertiesForViewControllerFieldTypeAtIndexPath:(NSIndexPath*)anIndexPath inObject:(NSObject*)anObject inForm:(NSString*)aFormName createMode:(BOOL)aCreateMode;
-- (BOOL)isReadOnlyForIndexPath:(NSIndexPath*)anIndexPath inObject:(NSObject*)anObject inForm:(NSString*)aFormName createMode:(BOOL)aCreateMode;
-- (NSString*)urlPropertyNameForIndexPath:(NSIndexPath*)anIndexPath inObject:(NSObject*)anObject inForm:(NSString*)aFormName createMode:(BOOL)aCreateMode;
 - (NSArray*)propertiesWithBackingPreferencesForObject:(NSObject*)anObject;
 - (NSString*)backingPreferencesPropertyForProperty:(NSString*)aPropertyName inObject:(NSObject*)anObject;
 
@@ -111,11 +104,6 @@ typedef NS_ENUM(NSUInteger, IFAEntityConfigFieldType){
                            inObject:(NSObject *)a_object
                              inForm:(NSString *)a_formName
                          createMode:(BOOL)a_createMode;
-- (NSString *)footerForSectionIndex:(NSInteger)a_sectionIndex inObject:(NSObject *)a_object inForm:(NSString *)a_formName
-                                                                                        createMode:(BOOL)a_createMode;
-
-- (NSString*)labelForIndexPath:(NSIndexPath*)anIndexPath inObject:(NSObject*)anObject inForm:(NSString*)aFormName createMode:(BOOL)aCreateMode;
-- (NSString*)nameForIndexPath:(NSIndexPath*)anIndexPath inObject:(NSObject*)anObject inForm:(NSString*)aFormName createMode:(BOOL)aCreateMode;
 - (NSString*)labelForForm:(NSString*)aFormName inObject:(NSObject*)anObject;
 - (NSString*)headerForForm:(NSString*)aFormName inObject:(NSObject*)anObject;
 - (NSString*)footerForForm:(NSString*)aFormName inObject:(NSObject*)anObject;
@@ -164,9 +152,10 @@ typedef NS_ENUM(NSUInteger, IFAEntityConfigFieldType){
 
 - (BOOL)shouldIncludePendingChangesInSingleSelectionForEntity:(NSString *)anEntityName;
 
-- (IFAEntityConfigFieldType)fieldTypeForIndexPath:(NSIndexPath *)a_indexPath inObject:(NSObject *)a_object
-                                           inForm:(NSString *)a_formName createMode:(BOOL)a_createMode;
+- (NSDictionary *)formSectionDictionaryAtIndex:(NSInteger)a_sectionIndex
+                                      inObject:(NSObject *)a_object
+                                   inFormNamed:(NSString *)a_formName
+                                    createMode:(BOOL)a_createMode;
 
-- (BOOL)isDestructiveButtonAtIndexPath:(NSIndexPath *)a_indexPath inObject:(NSObject *)a_object
-                                inForm:(NSString *)a_formName createMode:(BOOL)a_createMode;
+- (NSString *)localisedStringForKey:(NSString *)a_key;
 @end

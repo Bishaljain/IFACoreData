@@ -40,12 +40,8 @@
 */
 - (void)ifa_commonInit;
 
-- (id)ifa_propertyValueForIndexPath:(NSIndexPath *)anIndexPath inForm:(NSString *)aFormName createMode:(BOOL)aCreateMode;
-- (NSString*)ifa_propertyNameForIndexPath:(NSIndexPath *)anIndexPath inForm:(NSString *)aFormName createMode:(BOOL)aCreateMode;
 - (NSString*)ifa_propertyStringValueForName:(NSString *)a_propertyName calendar:(NSCalendar *)a_calendar value:(id)a_value;
 - (NSString*)ifa_propertyStringValueForName:(NSString *)a_propertyName calendar:(NSCalendar*)a_calendar;
-- (NSString*)ifa_propertyStringValueForIndexPath:(NSIndexPath *)anIndexPath inForm:(NSString *)aFormName
-                                      createMode:(BOOL)aCreateMode calendar:(NSCalendar*)a_calendar;
 - (NSString*)ifa_entityLabel;
 - (void)ifa_setValue:(id)aValue forProperty:(NSString *)aKey;
 - (NSString*)ifa_entityName;
